@@ -1,0 +1,12 @@
+[submodule "public/readmes/public-readme"]
+	path = public/readmes/public-readme
+	url = https://github.com/wrkstrm-finance/.github
+[submodule "public/spm/universal/domain/finance/common-broker"]
+	path = public/spm/universal/domain/finance/common-broker
+	url = https://github.com/wrkstrm-finance/common-broker.git
+[submodule "public/spm/universal/domain/finance/swift-public-brokerage-lib"]
+	path = public/spm/universal/domain/finance/swift-public-brokerage-lib
+	url = https://github.com/wrkstrm-finance/swift-public-brokerage-lib.git
+[submodule "public/spm/universal/domain/finance/swift-tradier-lib"]
+	path = public/spm/universal/domain/finance/swift-tradier-lib
+	url = https://github.com/wrkstrm-finance/swift-tradier-lib.git
