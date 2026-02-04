@@ -1,0 +1,1013 @@
+{
+  "agent" : {
+    "role" : "tau"
+  },
+  "backlog" : [
+    {
+      "notes" : [
+        "Lay out product thesis, type-safety mandate, and CommonShell commitments."
+      ],
+      "slug" : "founder-brief-template",
+      "title" : "Draft Tau founder brief DocC article"
+    },
+    {
+      "notes" : [
+        "App entry points and schemes verified; minimal features scoped for MVP.",
+        "Acceptance: primary schemes open in Xcode and build locally without errors."
+      ],
+      "slug" : "tau-app-mvp-integration",
+      "title" : "Tau app MVP integration"
+    },
+    {
+      "notes" : [
+        "Resolve Week 01 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-01-roundup",
+      "title" : "Tau 2025 roundup: Week 01"
+    },
+    {
+      "notes" : [
+        "Resolve Week 02 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-02-roundup",
+      "title" : "Tau 2025 roundup: Week 02"
+    },
+    {
+      "notes" : [
+        "Resolve Week 03 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-03-roundup",
+      "title" : "Tau 2025 roundup: Week 03"
+    },
+    {
+      "notes" : [
+        "Resolve Week 04 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-04-roundup",
+      "title" : "Tau 2025 roundup: Week 04"
+    },
+    {
+      "notes" : [
+        "Resolve Week 05 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-05-roundup",
+      "title" : "Tau 2025 roundup: Week 05"
+    },
+    {
+      "notes" : [
+        "Resolve Week 06 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-06-roundup",
+      "title" : "Tau 2025 roundup: Week 06"
+    },
+    {
+      "notes" : [
+        "Resolve Week 07 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-07-roundup",
+      "title" : "Tau 2025 roundup: Week 07"
+    },
+    {
+      "notes" : [
+        "Resolve Week 08 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-08-roundup",
+      "title" : "Tau 2025 roundup: Week 08"
+    },
+    {
+      "notes" : [
+        "Resolve Week 09 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-09-roundup",
+      "title" : "Tau 2025 roundup: Week 09"
+    },
+    {
+      "notes" : [
+        "Resolve Week 10 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-10-roundup",
+      "title" : "Tau 2025 roundup: Week 10"
+    },
+    {
+      "notes" : [
+        "Resolve Week 11 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-11-roundup",
+      "title" : "Tau 2025 roundup: Week 11"
+    },
+    {
+      "notes" : [
+        "Resolve Week 12 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-12-roundup",
+      "title" : "Tau 2025 roundup: Week 12"
+    },
+    {
+      "notes" : [
+        "Resolve Week 13 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-13-roundup",
+      "title" : "Tau 2025 roundup: Week 13"
+    },
+    {
+      "notes" : [
+        "Resolve Week 14 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-14-roundup",
+      "title" : "Tau 2025 roundup: Week 14"
+    },
+    {
+      "notes" : [
+        "Resolve Week 15 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-15-roundup",
+      "title" : "Tau 2025 roundup: Week 15"
+    },
+    {
+      "notes" : [
+        "Resolve Week 16 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-16-roundup",
+      "title" : "Tau 2025 roundup: Week 16"
+    },
+    {
+      "notes" : [
+        "Resolve Week 17 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-17-roundup",
+      "title" : "Tau 2025 roundup: Week 17"
+    },
+    {
+      "notes" : [
+        "Resolve Week 18 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-18-roundup",
+      "title" : "Tau 2025 roundup: Week 18"
+    },
+    {
+      "notes" : [
+        "Resolve Week 19 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-19-roundup",
+      "title" : "Tau 2025 roundup: Week 19"
+    },
+    {
+      "notes" : [
+        "Resolve Week 20 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-20-roundup",
+      "title" : "Tau 2025 roundup: Week 20"
+    },
+    {
+      "notes" : [
+        "Resolve Week 21 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-21-roundup",
+      "title" : "Tau 2025 roundup: Week 21"
+    },
+    {
+      "notes" : [
+        "Resolve Week 22 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-22-roundup",
+      "title" : "Tau 2025 roundup: Week 22"
+    },
+    {
+      "notes" : [
+        "Resolve Week 23 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-23-roundup",
+      "title" : "Tau 2025 roundup: Week 23"
+    },
+    {
+      "notes" : [
+        "Resolve Week 24 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-24-roundup",
+      "title" : "Tau 2025 roundup: Week 24"
+    },
+    {
+      "notes" : [
+        "Resolve Week 25 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-25-roundup",
+      "title" : "Tau 2025 roundup: Week 25"
+    },
+    {
+      "notes" : [
+        "Resolve Week 26 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-26-roundup",
+      "title" : "Tau 2025 roundup: Week 26"
+    },
+    {
+      "notes" : [
+        "Resolve Week 27 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-27-roundup",
+      "title" : "Tau 2025 roundup: Week 27"
+    },
+    {
+      "notes" : [
+        "Resolve Week 28 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-28-roundup",
+      "title" : "Tau 2025 roundup: Week 28"
+    },
+    {
+      "notes" : [
+        "Resolve Week 29 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-29-roundup",
+      "title" : "Tau 2025 roundup: Week 29"
+    },
+    {
+      "notes" : [
+        "Resolve Week 30 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-30-roundup",
+      "title" : "Tau 2025 roundup: Week 30"
+    },
+    {
+      "notes" : [
+        "Resolve Week 31 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-31-roundup",
+      "title" : "Tau 2025 roundup: Week 31"
+    },
+    {
+      "notes" : [
+        "Resolve Week 32 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-32-roundup",
+      "title" : "Tau 2025 roundup: Week 32"
+    },
+    {
+      "notes" : [
+        "Resolve Week 33 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-33-roundup",
+      "title" : "Tau 2025 roundup: Week 33"
+    },
+    {
+      "notes" : [
+        "Resolve Week 34 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-34-roundup",
+      "title" : "Tau 2025 roundup: Week 34"
+    },
+    {
+      "notes" : [
+        "Resolve Week 35 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-35-roundup",
+      "title" : "Tau 2025 roundup: Week 35"
+    },
+    {
+      "notes" : [
+        "Resolve Week 36 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-36-roundup",
+      "title" : "Tau 2025 roundup: Week 36"
+    },
+    {
+      "notes" : [
+        "Resolve Week 37 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-37-roundup",
+      "title" : "Tau 2025 roundup: Week 37"
+    },
+    {
+      "notes" : [
+        "Resolve Week 38 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-38-roundup",
+      "title" : "Tau 2025 roundup: Week 38"
+    },
+    {
+      "notes" : [
+        "Resolve Week 39 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-39-roundup",
+      "title" : "Tau 2025 roundup: Week 39"
+    },
+    {
+      "notes" : [
+        "Resolve Week 40 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-40-roundup",
+      "title" : "Tau 2025 roundup: Week 40"
+    },
+    {
+      "notes" : [
+        "Resolve Week 41 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-41-roundup",
+      "title" : "Tau 2025 roundup: Week 41"
+    },
+    {
+      "notes" : [
+        "Resolve Week 42 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-42-roundup",
+      "title" : "Tau 2025 roundup: Week 42"
+    },
+    {
+      "notes" : [
+        "Resolve Week 43 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-43-roundup",
+      "title" : "Tau 2025 roundup: Week 43"
+    },
+    {
+      "notes" : [
+        "Resolve Week 44 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-44-roundup",
+      "title" : "Tau 2025 roundup: Week 44"
+    },
+    {
+      "notes" : [
+        "Resolve Week 45 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-45-roundup",
+      "title" : "Tau 2025 roundup: Week 45"
+    },
+    {
+      "notes" : [
+        "Resolve Week 46 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-46-roundup",
+      "title" : "Tau 2025 roundup: Week 46"
+    },
+    {
+      "notes" : [
+        "Resolve Week 47 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-47-roundup",
+      "title" : "Tau 2025 roundup: Week 47"
+    },
+    {
+      "notes" : [
+        "Resolve Week 48 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-48-roundup",
+      "title" : "Tau 2025 roundup: Week 48"
+    },
+    {
+      "notes" : [
+        "Resolve Week 49 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-49-roundup",
+      "title" : "Tau 2025 roundup: Week 49"
+    },
+    {
+      "notes" : [
+        "Resolve Week 50 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-50-roundup",
+      "title" : "Tau 2025 roundup: Week 50"
+    },
+    {
+      "notes" : [
+        "Resolve Week 51 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-51-roundup",
+      "title" : "Tau 2025 roundup: Week 51"
+    },
+    {
+      "notes" : [
+        "Resolve Week 52 placeholder in the Tau 2025 roundup with key events and sources.",
+        "Sources must be under code/mono/apple/alphabeta/tau/** or linked Tau DocC bundles.",
+        "Confirm ISO week boundaries (Mon–Sun) in the notes when filling in events."
+      ],
+      "slug" : "tau-2025-week-52-roundup",
+      "title" : "Tau 2025 roundup: Week 52"
+    },
+    {
+      "notes" : [
+        "Decide whether any stakeholders need a non-ISO week definition.",
+        "If so, document the mapping or alternative view in Tau2025Roundup.md."
+      ],
+      "slug" : "tau-2025-roundup-oq-001",
+      "title" : "Resolve OQ-001: Week definition expectations"
+    },
+    {
+      "notes" : [
+        "Decide whether to add a quarterly summary section for founders.",
+        "If yes, define format and add to Tau2025Roundup.md."
+      ],
+      "slug" : "tau-2025-roundup-oq-002",
+      "title" : "Resolve OQ-002: Quarterly summary requirement"
+    },
+    {
+      "notes" : [
+        "Choose the canonical location for screenshots or visuals.",
+        "Document the decision in Tau2025Spec.md and update any links."
+      ],
+      "slug" : "tau-2025-roundup-oq-003",
+      "title" : "Resolve OQ-003: Visual assets location"
+    }
+  ],
+  "horizons" : [
+    {
+      "items" : [
+        "Review Tau telemetry and triad updates before standup.",
+        "Pair with lead engineer on the top priority Swift module.",
+        "Record any pivot decisions and notify Cadence + Patch."
+      ],
+      "kind" : "list",
+      "slug" : "h0-daily",
+      "title" : "H0 — Daily"
+    },
+    {
+      "items" : [
+        "Publish a product note capturing Tau wins, risks, and open questions.",
+        "Approve DocC narrative updates from Quill and Dot.",
+        "Validate cost footprint of automation with rismay before Friday recap.",
+        "Coordinate with Carrie/Dot on Status helper entitlements and profiles; provide bundle IDs and app group context."
+      ],
+      "kind" : "list",
+      "slug" : "h1-weekly",
+      "title" : "H1 — Weekly"
+    },
+    {
+      "key" : "near",
+      "label" : "Near-Term"
+    },
+    {
+      "key" : "mid",
+      "label" : "Mid-Term"
+    },
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    },
+    {
+      "key" : "near",
+      "label" : "Near-Term"
+    },
+    {
+      "key" : "mid",
+      "label" : "Mid-Term"
+    },
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    },
+    {
+      "key" : "near",
+      "label" : "Near-Term"
+    },
+    {
+      "key" : "mid",
+      "label" : "Mid-Term"
+    },
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    },
+    {
+      "key" : "near",
+      "label" : "Near-Term"
+    },
+    {
+      "key" : "mid",
+      "label" : "Mid-Term"
+    },
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    },
+    {
+      "key" : "near",
+      "label" : "Near-Term"
+    },
+    {
+      "key" : "mid",
+      "label" : "Mid-Term"
+    },
+    {
+      "key" : "far",
+      "label" : "Long-Term"
+    }
+  ],
+  "links" : [
+
+  ],
+  "milestones" : [
+    {
+      "due" : "2025-10-04T00:00:00Z",
+      "slug" : "tau-alpha-demo",
+      "status" : "planned",
+      "title" : "Tau alpha demo ready"
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "slug" : "exit-whisper-near-1",
+      "status" : "planned",
+      "title" : "Profit capture and trailing stop strategies; broker hooks."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "slug" : "exit-whisper-near-2",
+      "status" : "planned",
+      "title" : "P/L journal writes with entity segregation."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "slug" : "exit-whisper-mid-1",
+      "status" : "planned",
+      "title" : "Strategy-aware exits (calendars/diagonals/verticals) with sleeve guardrails."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "slug" : "exit-whisper-mid-2",
+      "status" : "planned",
+      "title" : "Simulation/replay tooling."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "slug" : "exit-whisper-far-1",
+      "status" : "planned",
+      "title" : "Autonomous exit engine with human-in-the-loop overrides and governance logs."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "slug" : "trade-journaler-near-1",
+      "status" : "planned",
+      "title" : "Capture fills and write Notion Position/Strategy entries with entity segregation."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "slug" : "trade-journaler-mid-1",
+      "status" : "planned",
+      "title" : "Integrate sleeve capacity metrics; attach preflight checks and artifacts."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "slug" : "trade-journaler-far-1",
+      "status" : "planned",
+      "title" : "Automate IRS-ready audit packs with summaries and diffs."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "slug" : "strategy-auditor-near-1",
+      "status" : "planned",
+      "title" : "Compute Δ skew and vega/theta equilibrium across open strategies."
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "slug" : "strategy-auditor-mid-1",
+      "status" : "planned",
+      "title" : "Flag convexity risk hot spots and produce Notion audit entries."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "slug" : "strategy-auditor-far-1",
+      "status" : "planned",
+      "title" : "Automated governance trend reporting with exception feeds to Patch."
+    },
+    {
+      "due" : "2025-10-15T00:00:00Z",
+      "slug" : "market-summarizer-near-1",
+      "status" : "planned",
+      "title" : "Publish daily EOD summaries; archive MD/JSON to governance store."
+    },
+    {
+      "due" : "2025-10-07T00:00:00Z",
+      "slug" : "uptime-ui-near-1",
+      "status" : "planned",
+      "title" : "Status Menu: 24/5 SLO + stacked charts shipped"
+    },
+    {
+      "due" : "2025-10-14T00:00:00Z",
+      "slug" : "uptime-ui-mid-1",
+      "status" : "planned",
+      "title" : "Tau app UI parity + detailed day drilldown"
+    },
+    {
+      "due" : "2025-10-31T00:00:00Z",
+      "slug" : "market-summarizer-mid-1",
+      "status" : "planned",
+      "title" : "Integrate unusual flow and IV shift analytics; sector heatmap."
+    },
+    {
+      "due" : "2025-12-30T00:00:00Z",
+      "slug" : "market-summarizer-far-1",
+      "status" : "planned",
+      "title" : "Automated governance trends and DocC exports."
+    },
+    {
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Baseline summary template and sector/IV/UOA sections."
+    },
+    {
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "Notion export pipeline and archival structure."
+    },
+    {
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Broker/market adapters; anomaly detection hooks."
+    },
+    {
+      "id" : "mid-2",
+      "status" : "planned",
+      "title" : "Schedule and failure notifications."
+    },
+    {
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Multi-tenant summaries by sleeve/entity and automated governance reports."
+    },
+    {
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Notion schema alignment; execution ingest and de-duplication."
+    },
+    {
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "Entity-aware journal writes with audit snapshots."
+    },
+    {
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Reconciliation against broker statements; discrepancy workflows."
+    },
+    {
+      "id" : "mid-2",
+      "status" : "planned",
+      "title" : "ROC vs sleeve capacity dashboards."
+    },
+    {
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "End-to-end audit packs and payroll cadence alignment."
+    },
+    {
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Define sleeve risk metrics and alert thresholds."
+    },
+    {
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "Implement exposure dashboards and PDF audits."
+    },
+    {
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Add vanna/volga approximations; stress testing scenarios."
+    },
+    {
+      "id" : "mid-2",
+      "status" : "planned",
+      "title" : "Broker integrations for positions/greeks."
+    },
+    {
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Automated periodic governance packs and entity-level roll-ups."
+    },
+    {
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Schema inventory; link rules for Markets → Sectors → Positions."
+    },
+    {
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "Notion API integration and idempotent updates."
+    },
+    {
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Drift detection and repair suggestions."
+    },
+    {
+      "id" : "mid-2",
+      "status" : "planned",
+      "title" : "Audit views for governance."
+    },
+    {
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Cross-project semantic graph with lineage and provenance."
+    },
+    {
+      "id" : "near-1",
+      "status" : "planned",
+      "title" : "Profit capture and trailing stop strategies; broker hooks."
+    },
+    {
+      "id" : "near-2",
+      "status" : "planned",
+      "title" : "P/L journal writes with entity segregation."
+    },
+    {
+      "id" : "mid-1",
+      "status" : "planned",
+      "title" : "Strategy-aware exits (calendars/diagonals/verticals) with sleeve guardrails."
+    },
+    {
+      "id" : "mid-2",
+      "status" : "planned",
+      "title" : "Simulation/replay tooling."
+    },
+    {
+      "id" : "far-1",
+      "status" : "planned",
+      "title" : "Autonomous exit engine with human-in-the-loop overrides and governance logs."
+    }
+  ],
+  "notes" : [
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    },
+    {
+      "author" : "",
+      "blocks" : [
+
+      ],
+      "date" : ""
+    }
+  ],
+  "owners" : [
+
+  ],
+  "principles" : [
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+    {
+      "items" : [
+        "Add day drilldown window invoked from Uptime card (Tau + Status).",
+        "Implement per-day detail chart (stacked online/offline bins) respecting SLO (24/5, 8/5).",
+        "Wire SLO mode into detail view and keep in sync with main toggle.",
+        "Persist SLO preference (UserDefaults) and restore on launch.",
+        "Make chart bars tappable/clickable to open the detail window (accessibility included).",
+        "Add Swift Testing for aggregator around per-bin coverage and DST boundaries (8/5).",
+        "Add UI test to verify window opens and renders sample bins (smoke).",
+        "Document day drilldown behavior and examples in DocC (UptimeMetrics.md)."
+      ],
+      "kind" : "list",
+      "slug" : "next-actions-uptime-drilldown",
+      "title" : "Next Actions — Uptime drilldown view + tests"
+    },
+    {
+      "items" : [
+        "Wire preview Source toggle to detail window (Uptime|Online).",
+        "Persist SLO/Source toggles; expose a Commands menu shortcut.",
+        "Add Tau app online writer for parity with Status Menu writer.",
+        "Add Swift Testing for aggregator bins (Local/ET, DST, UTC splits).",
+        "Crash: NSToolbar layout recursion (Catalyst, macOS 26.1) — triage and fix. (see request: tau-crash-2025-10-03; codex backlog: codex-tau-crash-triage-2025-10-03)",
+        "Bug: time monitoring scoring returns constant 1 — reproduce and correct. (codex backlog: codex-time-monitor-scoring-bug-2025-10-03)"
+      ],
+      "kind" : "bullets",
+      "slug" : "next",
+      "title" : "Next"
+    },
+    {
+      "items" : [
+        "Reintroduce series‑aware hover via ChartSelection (see request: alphabeta-tau-uptime-chart-hover-selection).",
+        "Day drill‑down view with Source toggle and screenshots in DocC."
+      ],
+      "kind" : "bullets",
+      "slug" : "later",
+      "title" : "Later"
+    },
+    {
+      "items" : [
+        "Refactor PublicLib to mirror the OmniBroker/TradierLib domain-oriented service structure. This improves discoverability, testability, and parity across broker integrations while preserving existing APIs."
+      ],
+      "kind" : "paragraphs",
+      "slug" : "objective",
+      "title" : "Imported — Public Libraries Steward: Objective"
+    },
+    {
+      "items" : [
+        "Introduce per‑domain folders under `Sources/PublicLib` (aligned to TradierLib):",
+        "QuoteService: market quotes, multi‑quotes, timesales (if available)",
+        "OrderService: order placement/preview/replace/cancel (as supported by Public)",
+        "ActivityService: account history/events (AccountHistory.swift)",
+        "PositionsService: portfolio/positions (Portfolio.swift)",
+        "ProfileService: user/account profile and balances (if API provides)",
+        "Auth: keep existing Auth flow but consider `AuthService/` for consistency",
+        "StreamingService: only if Public exposes streaming endpoints",
+        "Split monolithic client methods into per‑domain `PublicClient` extensions (e.g., `CodableService+Quotes.swift`).",
+        "Move Codable models and request types into the matching domain folders.",
+        "Add minimal DocC articles + tutorials mirroring the pattern in TradierLib."
+      ],
+      "kind" : "bullets",
+      "slug" : "scope",
+      "title" : "Imported — Public Libraries Steward: Scope"
+    },
+    {
+      "items" : [
+        "AccountHistory.swift → `ActivityService/` (requests + models)",
+        "Portfolio.swift → `PositionsService/` (positions/holdings)",
+        "Order.swift → `OrderService/`",
+        "Quote.swift → `QuoteService/`",
+        "PublicClient.swift / PublicHTTPClient.swift → keep core client bootstrap; move domain methods to `CodableService+*.swift` files.",
+        "Auth/ → keep as `Auth/` or `AuthService/` with clear entry points."
+      ],
+      "kind" : "bullets",
+      "slug" : "proposed-mapping-initial",
+      "title" : "Imported — Public Libraries Steward: Proposed Mapping (Initial)"
+    },
+    {
+      "items" : [
+        "Compile (`swift build`) and run existing tests (`swift test`).",
+        "Add DocC catalog with module landing, Services overview, Authentication, HTTP Requests, and Getting Started.",
+        "Update `swift-format` file lists if present."
+      ],
+      "kind" : "bullets",
+      "slug" : "verification",
+      "title" : "Imported — Public Libraries Steward: Verification"
+    },
+    {
+      "items" : [
+        "Public API coverage may differ from Tradier; ensure adapters or Common\\* models map cleanly where used by OmniBroker.",
+        "Keep source compatibility: consider `@available(*, deprecated, message:)` if any renames are necessary."
+      ],
+      "kind" : "bullets",
+      "slug" : "risks-considerations",
+      "title" : "Imported — Public Libraries Steward: Risks & Considerations"
+    },
+    {
+      "items" : [
+        "Completed 2025-09-03. Refactor, tests, and DocC catalog in place."
+      ],
+      "kind" : "bullets",
+      "slug" : "status",
+      "title" : "Imported — Public Libraries Steward: Status"
+    },
+    {
+      "items" : [
+        "Domain folders exist with methods, models, and requests split appropriately.",
+        "Build + tests pass; DocC pages render for key domains.",
+        "Consumers can adopt the new structure without breaking changes."
+      ],
+      "kind" : "bullets",
+      "slug" : "acceptance",
+      "title" : "Imported — Public Libraries Steward: Acceptance"
+    },
+    {
+      "items" : [
+        "StreamingService exploration (if Public exposes suitable endpoints).",
+        "CI: add docbuild target to ensure DocC stays healthy.",
+        "OmniBroker: implement Public‑backed Common services (Profile, Positions, Activity, Orders) and adapters."
+      ],
+      "kind" : "bullets",
+      "slug" : "next",
+      "title" : "Imported — Public Libraries Steward: Next"
+    }
+  ],
+  "slug" : "tau",
+  "sourcePath" : ".clia/agents/tau/root@mono.tau.agenda.triad.md",
+  "status" : "active",
+  "tags" : [
+
+  ],
+  "title" : "Tau Agenda",
+  "updated" : "2025-10-01T20:50:00Z"
+}

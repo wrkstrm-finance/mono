@@ -1,0 +1,696 @@
+{
+  "entries" : [
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "Adjusted DocC preview server baseUrl handling for /documentation/<slug> and rebuilt CodeSwiftly to validate local previews.",
+              "type" : "engineering",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Stopped overriding DocC baseUrl when serving /documentation/<slug> so SPA routing matches the archive output.",
+        "Rebuilt and reinstalled the CodeSwiftly mac app to validate preview rendering."
+      ],
+      "kind" : "journal",
+      "summary" : "Diagnosed CodeSwiftly DocC preview routing and removed the baseUrl override for documentation slugs.",
+      "tags" : [
+        "code-swiftly",
+        "docc",
+        "preview",
+        "bugfix"
+      ],
+      "timestamp" : "2026-01-07T22:23:22Z",
+      "title" : "CodeSwiftly DocC preview routing fix"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "Built roundup-report CLI features (coverage metrics, next-step callouts, git tag cadence, audits, source allow/deny lists, owned-package filtering, and .build/derived exclusions).",
+              "type" : "tooling",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Regenerated Tau, Hack-Nu, and CodeSwiftly executive roundups with per-day grouping and source file listings.",
+              "type" : "documentation",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Adjusted DocC tech root outputs and preview workflows for roundups.",
+              "type" : "engineering",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Extended roundup-report CLI to add data coverage, release cadence, and audit checks for missing pages and broken doc links.",
+        "Added owned library filters based on package roots and Package.swift targets; removed .build, SourcePackages, derived, and .clia/tmp sources.",
+        "Regenerated DocC bundles for tau, hack-nu, and code-swiftly roundups with updated summaries and sources."
+      ],
+      "kind" : "journal",
+      "summary" : "Expanded roundup-report tooling and refreshed product roundups for Tau, Hack-Nu, and CodeSwiftly.",
+      "tags" : [
+        "docc",
+        "roundup-report",
+        "tooling",
+        "tau",
+        "hack-nu",
+        "code-swiftly"
+      ],
+      "timestamp" : "2026-01-07T11:28:31Z",
+      "title" : "Roundup tooling and DocC refresh"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "Updated rismay-me DocC structure and assets; refined About Me copy; extended swift-docc-validator (DocC archive + duplicate PageImage checks); validated rismay-me bundle.",
+              "type" : "documentation",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Rebuilt and reran swift-docc-validator audit/references/metadata for rismay-me.",
+              "type" : "tooling",
+              "weight" : 1
+            },
+            {
+              "evidence" : "Adjusted validator internals for duplicate PageImage detection.",
+              "type" : "engineering",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Moved rismay-me experience pages into a folder and updated DocC links and metadata assets.",
+        "Refined the About Me story copy to be more human and Swift platform aware.",
+        "Updated swift-docc-validator to build DocC archives and detect duplicate PageImage references."
+      ],
+      "kind" : "journal",
+      "summary" : "Refined rismay-me DocC structure/assets and extended swift-docc-validator checks.",
+      "tags" : [
+        "docc",
+        "rismay-me",
+        "validator",
+        "tooling"
+      ],
+      "timestamp" : "2026-01-05T16:21:37Z",
+      "title" : "DocC structure and validator updates"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "expertise bundle",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Created Tau expertise DocC bundle with starter articles (uptime telemetry overview, status menu & telemetry UI).",
+        "Previewed locally; linked from agents triads."
+      ],
+      "kind" : "journal",
+      "links" : [
+        {
+          "title" : "Tau memory.docc",
+          "url" : ".clia/agents/tau/docc/memory.docc"
+        }
+      ],
+      "summary" : "Tau expertise bundle initialized and previewed.",
+      "tags" : [
+        "docc",
+        "tau",
+        "expertise"
+      ],
+      "timestamp" : "2025-12-22T08:00:00Z",
+      "title" : "Expertise kickoff"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "Created memory.docc bundle and starter articles",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Added tau-expertise.md and two articles (uptime telemetry overview; status menu & telemetry UI).",
+        "DocC preview available via xcrun on port 8084."
+      ],
+      "kind" : "journal",
+      "links" : [
+        {
+          "title" : "Tau expertise root",
+          "url" : ".clia/agents/tau/docc/memory.docc"
+        },
+        {
+          "title" : "Uptime telemetry overview",
+          "url" : ".clia/agents/tau/docc/memory.docc/Articles/uptime-telemetry-overview.md"
+        },
+        {
+          "title" : "Status Menu and telemetry UI",
+          "url" : ".clia/agents/tau/docc/memory.docc/Articles/status-menu-and-telemetry-ui.md"
+        }
+      ],
+      "summary" : "Initialized Tau expertise DocC bundle with an index and two starter articles (uptime telemetry, status menu UI).",
+      "tags" : [
+        "docc",
+        "tau",
+        "expertise"
+      ],
+      "timestamp" : "2025-12-22T09:00:00Z",
+      "title" : "Tau expertise kickoff"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "engineering",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "ui",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "clia",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "engineering",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "ui",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "codex",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "engineering",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "ui",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        },
+        {
+          "by" : "rismay",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "engineering",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "ui",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "TauKit: UptimeTelemetry.{GroupConfig, TargetConfig, GroupSummary} with SLO (24/5, 8/5) and Source (uptime, online).",
+        "TauKit: UptimeTelemetryDetailView (+ macOS window helper) renders bins/totals and source files.",
+        "Status Menu: Preview uses grouped bars; info popover shows targets, metrics paths, App Group root.",
+        "Hover: removed due to glitchiness; backlog filed to reintroduce via ChartSelection."
+      ],
+      "kind" : "journal",
+      "summary" : "Added TauKit UptimeTelemetry models and a reusable per‑day detail view; Status Menu preview cleaned (centered title, right‑aligned footer); hover deferred with backlog request.",
+      "timestamp" : "2025-10-03T02:47:00Z",
+      "title" : "Reusable telemetry component landed; Status Menu wired; info popover"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Status Menu uses TauKit UptimeTelemetryDetailView via window helper.",
+        "Preview: centered title, right‑aligned footer, info popover (targets, paths, App Group).",
+        "Hover removed pending stable series selection behavior (request filed)."
+      ],
+      "kind" : "journal",
+      "summary" : "Adopted reusable telemetry components; Status Menu preview refined; detail moved to TauKit.",
+      "timestamp" : "2025-10-03T02:46:00Z"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Exception: EXC_BREAKPOINT (SIGTRAP) during NSToolbarItemGroupView layout.",
+        "Deep NSView layout recursion; symbolication pending.",
+        "DocC request: tau-crash-2025-10-03 (resources include crash-5F5D140E.log).",
+        "Next: Reproduce on Catalyst, audit constraints/toolbar grouping, add guards/tests."
+      ],
+      "kind" : "journal",
+      "links" : [
+        {
+          "title" : "DocC request",
+          "url" : "code/.clia/docc/requests.docc/articles/tau-crash-2025-10-03.md"
+        }
+      ],
+      "summary" : "AppKit NSToolbar layout recursion crash (Catalyst, macOS 26.1) observed while app not active/minimized. Staged DocC request with full log.",
+      "timestamp" : "2025-10-03T00:29:00Z",
+      "title" : "Crash observed in background; triage request staged"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "ux",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "engineering",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Component: TauAnimationDemoComponent (ServiceView + FakeTauService)",
+        "Navigation: openWindow(id: 'tau-animation-demo') from Status Menu",
+        "Backlog: menu push navigation popover content invisible"
+      ],
+      "kind" : "journal",
+      "links" : [
+        {
+          "title" : "Demo component",
+          "url" : "code/mono/apple/alphabeta/tau/mac-status-app/components/TauAnimationDemoComponent.swift"
+        },
+        {
+          "title" : "Backlog item",
+          "url" : "backlog/menu-push-navigation-popover-bug.md"
+        }
+      ],
+      "summary" : "Added Tau Animation Demo component; opened via window while MenuBarExtra push bug is investigated.",
+      "timestamp" : "2025-10-02T18:05:00Z",
+      "title" : "Animation demo + push bug workaround"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "migrated",
+              "type" : "product",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "design",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "engineering",
+              "weight" : 1
+            },
+            {
+              "evidence" : "migrated",
+              "type" : "documentation",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Status Menu: JSONL per-day writer under metrics/uptime/status-menu; snapshots include online flag.",
+        "Tau app: parity writer + NWPathMonitor; logs network events under metrics/network/tau.",
+        "Aggregator: daily scoring; last 5 business days; 24/5 default.",
+        "UI: header KPIs (uptime %, offline minutes, last event) + stacked bars (uptime/offline).",
+        "Single-instance: Info.plist LSMultipleInstancesProhibited across helper/app.",
+        "Docs: Uptime and SLO DocC page; epic documented under mono requests."
+      ],
+      "kind" : "journal",
+      "summary" : "Seeded App Group minute snapshots in both apps; added aggregator + Swift Charts with stacked uptime/offline per day; network transitions are logged; SLO picker supports 24/5 vs 8/5.",
+      "timestamp" : "2025-10-02T00:23:02Z",
+      "title" : "Uptime epic in motion — writers, aggregator, charts, and 24/5 toggle"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "kind" : "spawn",
+      "summary" : "Instantiated the founder persona to steer Tau's roadmap while staying hands-on with CommonShell-first engineering.",
+      "tags" : [
+        "spawn",
+        "product",
+        "engineering"
+      ],
+      "timestamp" : "2025-09-27T00:27:05Z",
+      "title" : "Commissioned Tau"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "2025-09-03: Added DocC catalog (Getting Started, Services, Authentication, HTTP Requests). Documented end‑to‑end auth flow and request anatomy. Verified SwiftPM and Xcode workspace builds; 23 tests passed.",
+        "2025-09-03: Executed domain-service refactor aligning PublicLib to OmniBroker/TradierLib structure (Quote/Order/Activity/Positions/Profile/Auth/Services). Moved models into domain folders; split `PublicClient` into per-domain extensions; kept type and API names stable for source compatibility. Updated swift-format file list. Build verification should be done via Xcode workspace on macOS.",
+        "2025-09-03: Planned domain-service refactor to align PublicLib with OmniBroker/TradierLib structure (Quote/Order/Activity/Positions/Profile/Auth/Streaming). No behavioral changes expected; docs and tutorials to mirror TradierLib. Implementation deferred to a follow-up session."
+      ],
+      "timestamp" : "2025-09-03",
+      "title" : "PublicLib – AGENCY"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Date:",
+        "Context:",
+        "Decision:",
+        "Rationale:",
+        "Impact:",
+        "Follow-ups:"
+      ],
+      "summary" : "Seed: Initialized during PJM-SPRINT to complete the CLIA triad.",
+      "timestamp" : "2025-09-02T23:59:59Z",
+      "title" : "Entry Template"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "summary" : "> Document exit heuristics, thresholds, and audit requirements.",
+      "timestamp" : "2025-09-02T23:59:58Z",
+      "title" : "Agency Log — Whisper Exit (Parent)"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Date:",
+        "Context:",
+        "Decision:",
+        "Rationale:",
+        "Impact:",
+        "Follow-ups:"
+      ],
+      "summary" : "Seed: Initialized during PJM-SPRINT to complete the CLIA triad.",
+      "timestamp" : "2025-09-02T23:59:57Z",
+      "title" : "Entry Template"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "summary" : "> Institutional memory for note-linking rules, schemas, and safeguards.",
+      "timestamp" : "2025-09-02T23:59:56Z",
+      "title" : "Agency Log — Note Linker (Parent)"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Date:",
+        "Context:",
+        "Decision:",
+        "Rationale:",
+        "Impact:",
+        "Follow-ups:"
+      ],
+      "summary" : "Seed: Initialized during PJM-SPRINT to complete the CLIA triad.",
+      "timestamp" : "2025-09-02T23:59:55Z",
+      "title" : "Entry Template"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "summary" : "> Record risk model assumptions, governance thresholds, and compliance interpretations.",
+      "timestamp" : "2025-09-02T23:59:54Z",
+      "title" : "Agency Log — Strategy Auditor (Parent)"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Date:",
+        "Context:",
+        "Decision:",
+        "Rationale:",
+        "Impact:",
+        "Follow-ups:"
+      ],
+      "summary" : "Seed: Initialized during PJM-SPRINT to complete the CLIA triad.",
+      "timestamp" : "2025-09-02T23:59:53Z",
+      "title" : "Entry Template"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "summary" : "> Institutional memory for journal schemas, reconciliation logic, and entity routing.",
+      "timestamp" : "2025-09-02T23:59:52Z",
+      "title" : "Agency Log — Trade Journaler (Parent)"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "details" : [
+        "Date:",
+        "Context:",
+        "Decision:",
+        "Rationale:",
+        "Impact:",
+        "Follow-ups:"
+      ],
+      "summary" : "Seed: Initialized during PJM-SPRINT to complete the CLIA triad.",
+      "timestamp" : "2025-09-02T23:59:51Z",
+      "title" : "Entry Template"
+    },
+    {
+      "contributions" : [
+        {
+          "by" : "tau",
+          "types" : [
+            {
+              "evidence" : "legacy-entry",
+              "type" : "log",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "summary" : "> Record decisions, data sources, formatting standards, and governance needs for EOD summaries.",
+      "timestamp" : "2025-09-02T23:59:50Z",
+      "title" : "Agency Log — Market Summarizer (Parent)"
+    }
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+    {
+      "author" : "policy",
+      "blocks" : [
+        {
+          "kind" : "paragraph",
+          "text" : [
+            "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation."
+          ]
+        }
+      ]
+    }
+  ],
+  "schemaVersion" : "0.4.0",
+  "sections" : [
+
+  ],
+  "slug" : "tau",
+  "sourcePath" : ".clia/agents/tau/root@mono.tau.agency.triad.md",
+  "status" : "active",
+  "tags" : [
+
+  ],
+  "title" : "Tau Agency",
+  "updated" : "2025-10-03T02:47:00Z"
+}
