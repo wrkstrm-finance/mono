@@ -1,0 +1,19 @@
+{
+  "schemaVersion": "0.4.0",
+  "slug": "hermes@public-lib",
+  "title": "Hermes — Agenda",
+  "updated": "2026-01-25T00:00:00Z",
+  "status": "draft",
+  "sections": [
+    {
+      "slug": "backlog",
+      "title": "Backlog",
+      "kind": "list",
+      "items": [
+        "Add CI badge links for build/test/doc coverage to README.",
+        "Document SPM_USE_LOCAL_DEPS behavior in README and workflows.",
+        "Expand DocC with request/response examples for each service." 
+      ]
+    }
+  ]
+}
