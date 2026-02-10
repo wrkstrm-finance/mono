@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "0.4.0",
+  "slug": "hermes@public-lib",
+  "title": "Hermes — Agenda",
+  "updated": "2026-02-08T12:34:00Z",
+  "status": "draft",
+  "sections": [
+    {
+      "slug": "backlog",
+      "title": "Backlog",
+      "kind": "list",
+      "items": [
+        "Adopt the wrkstrm DocC design system for swift-tradier-lib: add a real DocC bundle with minimum layout (index@TechnologyRoot + overview/motivation/design/architecture/implementation/getting-started).",
+        "Curate DocC navigation via Topics containers (avoid double-curation): root links to guides/reference/tutorials containers; containers own leaf pages.",
+        "Add a canonical Getting Started that proves a happy-path: obtain token (sandbox/prod), initialize service, fetch quote, expected output, next steps.",
+        "Upgrade TradierCLI into a docs-grade sanity check tool: flags for --env/--symbol/--account-id, support --json output, consistent exit codes, avoid hard-coded AAPL/account.",
+        "Replace fatalError paths in public-ish bridging (e.g., missing managed context / unsupported type selection) with typed, documented errors; reflect failure modes in implementation docs.",
+        "Document and/or remove the default sandbox token behavior; clearly label as dev-only if retained.",
+        "Add CI badge links for build/test/doc coverage to README.",
+        "Document SPM_USE_LOCAL_DEPS behavior in README and workflows.",
+        "Expand DocC with request/response examples for each service (and map Tradier→CommonBroker adapters in a reference table)."
+      ]
+    }
+  ]
+}
