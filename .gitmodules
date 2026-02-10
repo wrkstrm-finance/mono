@@ -10,3 +10,7 @@
 [submodule "public/spm/universal/domain/finance/swift-tradier-lib"]
 	path = public/spm/universal/domain/finance/swift-tradier-lib
 	url = https://github.com/wrkstrm-finance/swift-tradier-lib.git
+
+[submodule "public/docc/pages/wrkstrm-finance.github.io"]
+	path = public/docc/pages/wrkstrm-finance.github.io
+	url = https://github.com/wrkstrm-finance/wrkstrm-finance.github.io
