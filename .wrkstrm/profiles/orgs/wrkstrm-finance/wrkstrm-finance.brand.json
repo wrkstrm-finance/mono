@@ -1,0 +1,123 @@
+{
+  "$schema": "../../../private/.wrkstrm/schemas/brand-identity.schema.json",
+  "id": "wrkstrm-finance",
+  "name": "wrkstrm-finance",
+  "mission": "Finance libraries for brokerage and market connectivity.",
+  "vibe": "Precise, compliant, data-driven",
+  "brandFamily": "wrkstrm-finance",
+  "parentBrand": "wrkstrm",
+  "subBrands": [],
+  "metadata": {
+    "pageImages": {
+      "icon": {
+        "source": "wrkstrm-finance-icon",
+        "alt": "wrkstrm-finance-icon icon"
+      },
+      "card": {
+        "source": "wrkstrm-finance-card",
+        "alt": "wrkstrm-finance-card card"
+      }
+    },
+    "pageColor": "green",
+    "titleHeading": "Wrkstrm Finance",
+    "pageKind": "article",
+    "heroImage": {
+      "source": "wrkstrm-finance-hero",
+      "alt": "wrkstrm-finance-hero hero"
+    }
+  },
+  "coreIdentity": {
+    "name": "wrkstrm-finance",
+    "handle": "wrkstrm-finance",
+    "archetype": "Analyst"
+  },
+  "scopeAndOwnership": {
+    "owner": "wrkstrm-finance",
+    "librariesOwned": [],
+    "submoduleRegistry": "submodules",
+    "seeAlso": "wrkstrm"
+  },
+  "publicPresence": {
+    "publicReadme": {
+      "directory": "/",
+      "repository": "wrkstrm-finance/.github",
+      "url": "https://wrkstrm-finance.github.io"
+    },
+    "githubPages": {
+      "repository": "wrkstrm-finance/wrkstrm-finance.github.io",
+      "url": "https://wrkstrm-finance.github.io"
+    },
+    "publicBrandedUrl": "https://wrkstrm-finance.github.io"
+  },
+  "topics": {
+    "brandUpdate": {
+      "title": "Brand Principles",
+      "link": "brand-principles"
+    },
+    "identitySystem": {
+      "title": "Identity System",
+      "concepts": [],
+      "elements": [
+        {
+          "id": "brand-principles",
+          "title": "Principles",
+          "link": "brand-principles"
+        },
+        {
+          "id": "color-system",
+          "title": "Color System",
+          "link": "color-system"
+        },
+        {
+          "id": "typography-system",
+          "title": "Typography System",
+          "link": "typography-system"
+        },
+        {
+          "id": "logo-system",
+          "title": "Logo System",
+          "link": "logo-system"
+        },
+        {
+          "id": "iconography-system",
+          "title": "Iconography System",
+          "link": "iconography-system"
+        },
+        {
+          "id": "layout-system",
+          "title": "Layout System",
+          "link": "layout-system"
+        },
+        {
+          "id": "motion-system",
+          "title": "Motion System",
+          "link": "motion-system"
+        },
+        {
+          "id": "accessibility-system",
+          "title": "Accessibility System",
+          "link": "accessibility-system"
+        },
+        {
+          "id": "voice-tone-system",
+          "title": "Voice & Tone System",
+          "link": "voice-tone-system"
+        },
+        {
+          "id": "asset-policy",
+          "title": "Asset Policy",
+          "link": "asset-policy"
+        }
+      ]
+    },
+    "explorations": {
+      "title": "Explorations",
+      "items": []
+    }
+  },
+  "scaleGoal": {
+    "targetReach": "50M",
+    "statement": "Trusted finance connectivity"
+  },
+  "themeSongUrl": null
+}
