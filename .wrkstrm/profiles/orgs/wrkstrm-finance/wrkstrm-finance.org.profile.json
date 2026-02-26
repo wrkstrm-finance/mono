@@ -9,7 +9,7 @@
   "missionDocument": "./wrkstrm-finance.mission.org.wrkstrm.md",
   "publicPages": {
     "enabled": true,
-    "canonicalBaseUrl": "https://wrkstrm-finance.github.io",
+    "canonicalBaseUrl": "https://wrkstrm.com/finance",
     "githubPagesUrl": "https://wrkstrm-finance.github.io",
     "health": {
       "probeKind": "docc-json",
