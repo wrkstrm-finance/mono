@@ -32,7 +32,7 @@ let package: Package = .init(
       from: "3.0.0"
     ),
     localOrRemote(
-      path: "../../../../../../../wrkstrm/private/spm/universal/domain/system/wrkstrm-networking",
+      path: "../../../../../../../wrkstrm/private/universal/spm/domain/system/wrkstrm-networking",
       url: "https://github.com/wrkstrm/wrkstrm-networking.git",
       from: "3.0.0"
     ),
