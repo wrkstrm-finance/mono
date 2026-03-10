@@ -40,21 +40,21 @@ let package: Package = .init(
     localOrRemote(
       name: "CommonBroker",
       path: "../../../../../../../wrkstrm-finance/private/spm/universal/domain/finance/common-broker",
-      url: "https://github.com/wrkstrm/common-broker.git",
-      from: "0.1.0"
+      url: "https://github.com/wrkstrm-finance/common-broker.git",
+      from: "0.1.3"
     ),
     localOrRemote(
       name: "swift-public-brokerage-lib",
       path:
         "../../../../../../../wrkstrm-finance/private/spm/universal/domain/finance/swift-public-brokerage-lib",
-      url: "https://github.com/swift-universal/swift-public-brokerage-lib.git",
-      from: "0.1.0"
+      url: "https://github.com/wrkstrm-finance/swift-public-brokerage-lib.git",
+      from: "0.1.1"
     ),
     localOrRemote(
       name: "swift-tradier-lib",
       path: "../../../../../../../wrkstrm-finance/private/spm/universal/domain/finance/swift-tradier-lib",
-      url: "https://github.com/swift-universal/swift-tradier-lib.git",
-      from: "1.0.0"
+      url: "https://github.com/wrkstrm-finance/swift-tradier-lib.git",
+      from: "0.2.2"
     ),
   ],
   targets: [

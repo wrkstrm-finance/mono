@@ -34,7 +34,7 @@ let package: Package = .init(
     localOrRemote(
       path: "../../../../../../../wrkstrm/private/universal/spm/domain/system/wrkstrm-networking",
       url: "https://github.com/wrkstrm/wrkstrm-networking.git",
-      from: "3.0.0"
+      from: "3.0.3"
     ),
     localOrRemote(
       path: "../../../../../../../../modules/swift-universal/private/spm/universal/domain/system/common-log",
