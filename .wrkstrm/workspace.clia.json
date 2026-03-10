@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "0.5.0",
+  "automationMode": "paused",
+  "org": {
+    "id": "wrkstrm-finance",
+    "visibility": "private"
+  },
+  "policy": {
+    "guardrails": [
+      "Keep commissioned identity under private/universal/identity/.",
+      "Keep OpenClaw runtime state under private/universal/vaults/openclaw/state/.",
+      "Do not create repo-local compatibility symlinks or legacy profile mirrors."
+    ]
+  }
+}

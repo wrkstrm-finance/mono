@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "clia.triad.agency.v1.json",
+  "slug": "wrkstrm-finance",
+  "title": "wrkstrm Finance Agency",
+  "updated": "2026-03-10T07:30:00Z",
+  "role": "wrkstrm-finance",
+  "entries": [
+    {
+      "timestamp": "2026-03-10T07:30:00Z",
+      "title": "Canonicalize collective layout",
+      "summary": "Canonicalized the root collective scaffold, commissioned identity bundle, and OpenClaw state surfaces.",
+      "tags": [
+        "canonical-layout",
+        "identity",
+        "openclaw"
+      ],
+      "contributions": [
+        {
+          "agent": "wrkstrm-finance",
+          "type": "doc"
+        }
+      ]
+    }
+  ],
+  "links": [],
+  "mentors": [],
+  "notes": [],
+  "sections": [],
+  "sourcePath": "private/universal/identity/wrkstrm-finance@rismay.substrate.agency.triad.json",
+  "tags": [
+    "collective"
+  ]
+}

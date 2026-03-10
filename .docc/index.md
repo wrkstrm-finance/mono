@@ -1,44 +1,44 @@
-# wrkstrm-finance taxonomy
+@Metadata {
+  @TechnologyRoot
+  @PageKind(article)
+  @PageColor(gray)
+  @TitleHeading("wrkstrm Finance")
+  @Available(platform: macOS, introduced: "1.0")
+}
 
-This document defines the **taxonomy** for Wrkstrm Finance documentation and agent artifacts.
+# wrkstrm Finance
 
-## What lives where
+This is the canonical DocC entrypoint for the local `wrkstrm-finance` collective scaffold.
 
-### Private agent system (authoritative, non-public)
+## Purpose
 
-- **Path:** `orgs/wrkstrm-finance/private/.clia/`
-- **Purpose:** The CLIA agent system for this repo: triads, agendas, agency logs, generated agent bundles, and any operational metadata.
-- **Why private:** This material includes operational posture (and may include sensitive details) and is not intended for public distribution.
+- This directory is the canonical collective workspace for `wrkstrm-finance`.
+- Canonical local structure guidance for this scaffold lives in this DocC bundle.
 
-What you will find:
+## Structure
 
-- `private/.clia/agents/<agent>/` — agent directories
-  - `*.agent.triad.json` — persona + guardrails
-  - `*.agenda.triad.json` — forward plan / backlog
-  - `*.agency.triad.json` — decision log / institutional memory
+- `private/universal/identity` - canonical commissioned identity / triad home
+- `memory/memory.docc` - canonical memory surface
+- `private/universal/vaults/openclaw/state/agent` - canonical OpenClaw agent-local state
+- `private/universal/vaults/openclaw/state/agent/auth-profiles.template.json` - committed auth template
+- `private/universal/vaults/openclaw/state/sessions` - canonical OpenClaw session store
+- `.wrkstrm/workspace.clia.json` - current CLIA workspace contract
+- `private/universal/archive/legacy-profiles` - archived copy of historical `.wrkstrm/profiles/**` content
 
-### Public documentation (published)
+## Local Metadata Sources
 
-- **Path:** `orgs/wrkstrm-finance/public/docc/pages/wrkstrm-finance.github.io/`
-- **Purpose:** Public-facing DocC/markdown pages intended to be published (GitHub Pages DocC exports).
-- **Rule:** Public docs should describe *APIs, workflows, and architecture* without leaking private operational details.
+- `wrkstrm-finance.json`
+- `wrkstrm-finance.reminder.json`
 
-### Workspace / local-only DocC (developer convenience)
+## OpenClaw Mapping
 
-- **Path:** `docc/private/host/local/` (mono workspace)
-- **Purpose:** Local/private catalogs used for internal browsing and developer ergonomics.
+- When `wrkstrm-finance` is registered in OpenClaw, `~/.openclaw/agents/wrkstrm-finance` should resolve to the canonical workspace-owned state root.
+- `~/.openclaw/agents/wrkstrm-finance/agent` should resolve to `private/universal/vaults/openclaw/state/agent`.
+- `~/.openclaw/agents/wrkstrm-finance/sessions` should resolve to `private/universal/vaults/openclaw/state/sessions`.
 
-## Naming + navigation rules (DocC)
+## Canon
 
-These follow the repo DocC design system:
-
-- Use an explicit technology root (`@TechnologyRoot`) for DocC bundles.
-- Navigation is defined by the **curation tree** in `## Topics` (not folders on disk).
-- Avoid “double curation”: parents link to containers; containers link to children.
-- Keep resources in a flat `resources/` directory and use path-prefixed asset names to avoid collisions.
-
-## Intent
-
-- Keep **execution + agent governance** private (`private/.clia`).
-- Keep **API surface area + usage docs** public (`public/docc/pages/...`).
-- Keep **developer-only catalogs** out of the public publishing path (`docc/private/...`).
+- Treat this page as the canonical local structure note for `wrkstrm-finance`.
+- Keep commissioned identity in `private/universal/identity/`.
+- Do not add repo-local alias paths or compatibility symlinks.
+- If the right location is not intuitive, warn immediately and raise your voice instead of guessing.

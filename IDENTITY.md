@@ -1,22 +1,35 @@
 # IDENTITY.md - wrkstrm Finance
 
-Root identity surface for the `wrkstrm-finance` collective.
+Root identity surface for the commissioned `wrkstrm-finance` collective.
 
-Current local identity and collective-definition surfaces:
+For commissioned triads and related identity artifacts, inspect:
 
-- `.wrkstrm/profile/`
+- `private/universal/identity/`
+
+## Identity
+
+- Collective: `wrkstrm-finance`
+- Shape: a collection of operators and agents with repo-local governance.
+- Workspace contract: `.wrkstrm/workspace.clia.json`
+
+## Canonical Places
+
+- local structure note: `.docc/index.md`
+- commissioned identity / triads: `private/universal/identity/`
+- canonical memory: `memory/memory.docc/`
+- canonical OpenClaw state: `private/universal/vaults/openclaw/state/`
+
+## Local Metadata Sources
+
 - `wrkstrm-finance.json`
 - `wrkstrm-finance.reminder.json`
-- `.docc/index.md`
+
+## Other Repo Notes
+
+- Legacy profile archive: `private/universal/archive/legacy-profiles/`
 - `README.md`
 
-## Current shape
+## Operational Notes
 
-- This collective currently mixes `.wrkstrm/profile/`, root JSON metadata, and DocC guidance instead of a commissioned `private/universal/identity/` bundle.
-- This collective does not yet have a commissioned `private/universal/identity/` directory.
-- If this collective is canonicalized further, prefer moving into `private/universal/identity/` rather than adding another parallel profile surface.
-
-## Fallback orientation
-
-- `README.md`
-- `.docc/index.md`
+- Follow these root wrapper surfaces first, then the commissioned identity bundle.
+- If a surface is missing and the location is unclear, warn immediately and raise your voice instead of guessing.

@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "profiles": {
+    "openai-codex:default": {
+      "type": "oauth",
+      "provider": "openai-codex",
+      "access": "",
+      "refresh": "",
+      "expires": 0,
+      "accountId": ""
+    }
+  },
+  "lastGood": {
+    "openai-codex": "openai-codex:default"
+  },
+  "usageStats": {
+    "openai-codex:default": {
+      "lastUsed": 0,
+      "errorCount": 0,
+      "lastFailureAt": 0
+    }
+  }
+}
