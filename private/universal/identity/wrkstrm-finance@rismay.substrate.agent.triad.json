@@ -1,5 +1,5 @@
 {
-  "schemaVersion": "clia.triad.agent.v1.json",
+  "schemaVersion": "0.5.0",
   "slug": "wrkstrm-finance",
   "title": "wrkstrm Finance",
   "status": "active",
