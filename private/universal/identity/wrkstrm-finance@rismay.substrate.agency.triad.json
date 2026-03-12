@@ -16,8 +16,14 @@
       ],
       "contributions": [
         {
-          "agent": "wrkstrm-finance",
-          "type": "doc"
+          "by": "wrkstrm-finance",
+          "types": [
+            {
+              "evidence": "Canonicalized the root collective scaffold, commissioned identity bundle, and OpenClaw state surfaces.",
+              "type": "doc",
+              "weight": 1
+            }
+          ]
         }
       ]
     }
