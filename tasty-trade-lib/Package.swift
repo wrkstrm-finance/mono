@@ -27,17 +27,17 @@ let package: Package = .init(
   ],
   dependencies: [
     localOrRemote(
-      path: "../../../../../../../wrkstrm/private/spm/universal/domain/system/wrkstrm-foundation",
-      url: "https://github.com/wrkstrm/wrkstrm-foundation.git",
+      path: "../../swift-universal/private/universal/domain/system/spm/swift-universal-foundation",
+      url: "https://github.com/swift-universal/swift-universal-foundation.git",
       from: "3.0.0"
     ),
     localOrRemote(
-      path: "../../../../../../../wrkstrm/private/universal/spm/domain/system/wrkstrm-networking",
+      path: "../../wrkstrm/private/universal/spm/domain/system/wrkstrm-networking",
       url: "https://github.com/wrkstrm/wrkstrm-networking.git",
-      from: "3.0.3"
+      from: "3.0.5"
     ),
     localOrRemote(
-      path: "../../../../../../../../modules/swift-universal/private/spm/universal/domain/system/common-log",
+      path: "../../swift-universal/private/universal/spm/domain/system/common-log",
       url: "https://github.com/swift-universal/common-log.git",
       from: "3.0.0"
     ),
@@ -46,7 +46,7 @@ let package: Package = .init(
     .target(
       name: "TastyTradeLib",
       dependencies: [
-        .product(name: "WrkstrmFoundation", package: "wrkstrm-foundation"),
+        .product(name: "SwiftUniversalFoundation", package: "swift-universal-foundation"),
         .product(name: "WrkstrmNetworking", package: "wrkstrm-networking"),
         .product(name: "CommonLog", package: "common-log"),
       ],
