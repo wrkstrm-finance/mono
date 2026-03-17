@@ -14,7 +14,15 @@ let package = Package(
   dependencies: [
     .package(
       name: "swift-tradier-lib",
-      path: "../../../../wrkstrm-finance/private/spm/universal/domain/finance/swift-tradier-lib"
+      path: "../public/universal/spm/domain/finance/swift-tradier-lib"
+    ),
+    .package(
+      name: "common-log",
+      path: "../../swift-universal/private/universal/spm/domain/system/common-log"
+    ),
+    .package(
+      name: "tradier-schemas-v000-001-000",
+      path: "../../universal-schemas/private/universal/schemas/tradier-schemas/v0.1.0/spm/tradier-schemas-v000-001-000"
     ),
     .package(
       url: "https://github.com/apple/swift-argument-parser",
@@ -25,10 +33,12 @@ let package = Package(
     .executableTarget(
       name: "TradierCLI",
       dependencies: [
-        "TradierLib"
-        //            .product(name: "WrkstrmFoundation", package: "wrkstrm-foundation"),
-        //            .product(name: "WrkstrmNetworking", package: "wrkstrm-foundation"),
-        //            .product(name: "CommonLog", package: "common-log"),
+        .product(name: "TradierLib", package: "swift-tradier-lib"),
+        .product(name: "CommonLog", package: "common-log"),
+        .product(
+          name: "TradierSchemas_v000_001_000",
+          package: "tradier-schemas-v000-001-000"
+        ),
       ],
     ),
     .testTarget(

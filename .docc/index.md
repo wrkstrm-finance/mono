@@ -22,7 +22,7 @@ This is the canonical DocC entrypoint for the local `wrkstrm-finance` collective
 - `private/universal/vaults/openclaw/state/agent` - canonical OpenClaw agent-local state
 - `private/universal/vaults/openclaw/state/agent/auth-profiles.template.json` - committed auth template
 - `private/universal/vaults/openclaw/state/sessions` - canonical OpenClaw session store
-- `.wrkstrm/workspace.clia.json` - current CLIA workspace contract
+- `.wrkstrm/workspace.wrkstrm.json` - current CLIA workspace contract
 - `private/universal/archive/legacy-profiles` - archived copy of historical `.wrkstrm/profiles/**` content
 
 ## Local Metadata Sources

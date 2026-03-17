@@ -32,7 +32,7 @@ Startup order:
 - canonical memory: `memory/memory.docc/`
 - canonical collective-local state: `private/universal/vaults/openclaw/state/agent/`
 - canonical session store: `private/universal/vaults/openclaw/state/sessions/`
-- collective workspace contract: `.wrkstrm/workspace.clia.json`
+- collective workspace contract: `.wrkstrm/workspace.wrkstrm.json`
 - OpenClaw-visible state root: `~/.openclaw/agents/wrkstrm-finance/` when registered
 
 ## Bootstrap Rules

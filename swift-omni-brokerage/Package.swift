@@ -37,24 +37,27 @@ let package: Package = .init(
     ),
   ],
   dependencies: [
+    .package(
+      name: "common-broker-schemas-v000-001-000",
+      path: "../../universal-schemas/private/universal/schemas/common-broker-schemas/v0.1.0/spm/common-broker-schemas-v000-001-000"
+    ),
     localOrRemote(
       name: "CommonBroker",
-      path: "../../../../../../../wrkstrm-finance/private/spm/universal/domain/finance/common-broker",
+      path: "../public/universal/spm/domain/finance/common-broker",
       url: "https://github.com/wrkstrm-finance/common-broker.git",
       from: "0.1.3"
     ),
     localOrRemote(
       name: "swift-public-brokerage-lib",
-      path:
-        "../../../../../../../wrkstrm-finance/private/spm/universal/domain/finance/swift-public-brokerage-lib",
+      path: "../public/universal/spm/domain/finance/swift-public-brokerage-lib",
       url: "https://github.com/wrkstrm-finance/swift-public-brokerage-lib.git",
       from: "0.1.1"
     ),
     localOrRemote(
       name: "swift-tradier-lib",
-      path: "../../../../../../../wrkstrm-finance/private/spm/universal/domain/finance/swift-tradier-lib",
+      path: "../public/universal/spm/domain/finance/swift-tradier-lib",
       url: "https://github.com/wrkstrm-finance/swift-tradier-lib.git",
-      from: "0.2.2"
+      from: "0.2.3"
     ),
   ],
   targets: [
@@ -62,6 +65,10 @@ let package: Package = .init(
       name: "OmniBrokerageLib",
       dependencies: [
         .product(name: "CommonBroker", package: "CommonBroker"),
+        .product(
+          name: "CommonBrokerSchemas_v000_001_000",
+          package: "common-broker-schemas-v000-001-000"
+        ),
         .product(name: "PublicBrokerageCommonAdapters", package: "swift-public-brokerage-lib"),
         .product(name: "PublicBrokerageLib", package: "swift-public-brokerage-lib"),
         .product(name: "TradierBrokerageCommonAdapters", package: "swift-tradier-lib"),

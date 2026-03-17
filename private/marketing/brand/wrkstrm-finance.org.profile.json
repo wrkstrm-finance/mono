@@ -1,0 +1,30 @@
+{
+  "$schema": "https://wrkstrm.dev/schemas/collective-profile/collective-profile.schema.json",
+  "schemaVersion": "0.1.0",
+  "id": "wrkstrm-finance",
+  "owned": true,
+  "owners": [
+    "wrkstrm"
+  ],
+  "mission": {
+    "url": "../../formation/wrkstrm-finance.mission.org.wrkstrm.md"
+  },
+  "publicPages": {
+    "enabled": true,
+    "canonicalBaseUrl": "https://wrkstrm.com/finance",
+    "githubPagesUrl": "https://wrkstrm-finance.github.io",
+    "health": {
+      "probeKind": "docc-json",
+      "bundle": "index"
+    }
+  },
+  "sre": {
+    "discordChannelId": "1470334002626957334"
+  },
+  "brandBundle": {
+    "url": "./wrkstrm-finance.brand.docc"
+  },
+  "brandIdentity": {
+    "url": "../../universal/identity/wrkstrm-finance.brand.json"
+  }
+}

@@ -1,4 +1,5 @@
 import CommonBroker
+import CommonBrokerSchemas_v000_001_000
 import PublicBrokerageCommonAdapters
 import PublicBrokerageLib
 import TradierBrokerageCommonAdapters

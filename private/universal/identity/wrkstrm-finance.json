@@ -15,7 +15,7 @@
       "wrkstrm-finance.json",
       "wrkstrm-finance.reminder.json"
     ],
-    "workspacePath": ".wrkstrm/workspace.clia.json"
+    "workspacePath": ".wrkstrm/workspace.wrkstrm.json"
   },
   "style": {
     "core": {

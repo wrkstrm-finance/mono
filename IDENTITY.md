@@ -10,7 +10,7 @@ For commissioned triads and related identity artifacts, inspect:
 
 - Collective: `wrkstrm-finance`
 - Shape: a collection of operators and agents with repo-local governance.
-- Workspace contract: `.wrkstrm/workspace.clia.json`
+- Workspace contract: `.wrkstrm/workspace.wrkstrm.json`
 
 ## Canonical Places
 

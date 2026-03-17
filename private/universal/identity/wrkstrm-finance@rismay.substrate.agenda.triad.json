@@ -13,7 +13,7 @@
       "title": "Maintain canonical collective layout",
       "notes": [
         "Keep root wrapper files and commissioned identity surfaces aligned.",
-        "Review .wrkstrm/workspace.clia.json whenever automation policy changes.",
+        "Review .wrkstrm/workspace.wrkstrm.json whenever automation policy changes.",
         "Keep OpenClaw state rooted under private/universal/vaults/openclaw/state/."
       ]
     }

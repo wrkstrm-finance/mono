@@ -1,5 +1,5 @@
 {
-  "originHash" : "b1936be2f8c856d197bb76f8b48137fc54a129da3f06abe706d3a9442f2b2d5e",
+  "originHash" : "de5fa5d285591a5e8ca5db3be0b046b29a4afbfb4e11a38874cbab5d98c9b4bb",
   "pins" : [
     {
       "identity" : "jjliso8601dateformatter",
@@ -114,8 +114,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log.git",
       "state" : {
-        "revision" : "ce592ae52f982c847a4efc0dd881cc9eb32d29f2",
-        "version" : "1.6.4"
+        "revision" : "bbd81b6725ae874c69e9b8c8804d462356b55523",
+        "version" : "1.10.1"
       }
     },
     {

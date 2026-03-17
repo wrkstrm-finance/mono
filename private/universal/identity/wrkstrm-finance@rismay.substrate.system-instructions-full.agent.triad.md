@@ -11,7 +11,7 @@
 
 - Commissioned identity lives under `private/universal/identity/`.
 - OpenClaw runtime state lives under `private/universal/vaults/openclaw/state/`.
-- Collective workspace config lives at `.wrkstrm/workspace.clia.json`.
+- Collective workspace config lives at `.wrkstrm/workspace.wrkstrm.json`.
 - Do not recreate `profile/`, `.wrkstrm/profile`, `.openclaw/workspace/profile`, or repo-local compatibility symlinks.
 - Prefer relative repo paths in committed JSON and Markdown surfaces.
 

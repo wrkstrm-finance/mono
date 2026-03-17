@@ -1,7 +1,7 @@
 import Foundation
-import WrkstrmFoundation
+import SwiftUniversalFoundation
 import CommonLog
-import WrkstrmMain
+import SwiftUniversalMain
 import WrkstrmNetworking
 
 #if canImport(FoundationNetworking)

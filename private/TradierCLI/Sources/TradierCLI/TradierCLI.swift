@@ -1,6 +1,7 @@
 import Foundation
-import TradierLib
 import CommonLog
+import TradierLib
+import TradierSchemas_v000_001_000
 
 @main
 struct TradierCLI {

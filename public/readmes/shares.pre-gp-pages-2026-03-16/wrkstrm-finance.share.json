@@ -1,0 +1,30 @@
+{
+  "commitHash" : "916b166ea60988b586cad16994a1e36c678c9831",
+  "contents" : [
+
+  ],
+  "createdAt" : "2026-03-16T13:38:42Z",
+  "githubOwner" : "wrkstrm-finance",
+  "kind" : "public",
+  "notes" : [
+    "Initialized by swift-web-deploy-cli init snapshot.",
+    "Snapshot copied to staged path but not published yet."
+  ],
+  "owner" : "wrkstrm-finance",
+  "provider" : "readmes",
+  "remoteHost" : "github.com/wrkstrm-finance",
+  "repoName" : "wrkstrm-finance",
+  "schemaVersion" : "0.3.0",
+  "slug" : "wrkstrm-finance",
+  "snapshot" : {
+    "path" : [
+      "public/readmes/shares/snapshots/wrkstrm-finance/wrkstrm-finance/public-readme"
+    ]
+  },
+  "source" : {
+    "path" : "public/readmes/public-readme"
+  },
+  "status" : "draft",
+  "type" : "snapshot",
+  "visibility" : "public"
+}

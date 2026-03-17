@@ -14,7 +14,7 @@ It is not a detached wishlist.
 
 ## Current routing
 
-- Collective workspace contract: `.wrkstrm/workspace.clia.json`
+- Collective workspace contract: `.wrkstrm/workspace.wrkstrm.json`
 - Commissioned identity: `private/universal/identity/`
 - Canonical local structure note: `.docc/index.md`
 - Runtime state root: `private/universal/vaults/openclaw/state/`

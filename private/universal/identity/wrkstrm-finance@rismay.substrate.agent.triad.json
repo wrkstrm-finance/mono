@@ -8,7 +8,7 @@
   "purpose": "Canonical commissioned identity for the wrkstrm-finance collective. Coordinates local operators, agents, and repo-local guidance.",
   "extensions": {
     "x-badge": "[WRKSTRM-FINANCE]",
-    "workspacePath": ".wrkstrm/workspace.clia.json"
+    "workspacePath": ".wrkstrm/workspace.wrkstrm.json"
   },
   "checklists": [
     {
@@ -61,7 +61,7 @@
     },
     {
       "title": "Workspace contract",
-      "url": ".wrkstrm/workspace.clia.json"
+      "url": ".wrkstrm/workspace.wrkstrm.json"
     }
   ],
   "notes": [
