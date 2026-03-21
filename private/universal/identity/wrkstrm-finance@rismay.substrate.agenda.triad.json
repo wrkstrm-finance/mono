@@ -1,40 +1,70 @@
 {
-  "schemaVersion": "0.5.0",
-  "slug": "wrkstrm-finance",
-  "title": "wrkstrm Finance Agenda",
-  "status": "active",
-  "updated": "2026-03-10T07:30:00Z",
-  "agent": {
-    "role": "wrkstrm-finance"
+  "agent" : {
+    "role" : "wrkstrm-finance"
   },
-  "backlog": [
+  "backlog" : [
     {
-      "slug": "maintain-canonical-layout",
-      "title": "Maintain canonical collective layout",
-      "notes": [
+      "notes" : [
         "Keep root wrapper files and commissioned identity surfaces aligned.",
         "Review .wrkstrm/workspace.wrkstrm.json whenever automation policy changes.",
         "Keep OpenClaw state rooted under private/universal/vaults/openclaw/state/."
-      ]
+      ],
+      "slug" : "maintain-canonical-layout",
+      "title" : "Maintain canonical collective layout"
     }
   ],
-  "themes": [
-    {
-      "slug": "identity",
-      "title": "Identity",
-      "summary": "Keep commissioned identity in private/universal/identity/."
-    },
-    {
-      "slug": "state",
-      "title": "State",
-      "summary": "Keep OpenClaw runtime state in private/universal/vaults/openclaw/state/."
-    }
+  "dependencies" : [
+
   ],
-  "extensions": {
-    "metadataPaths": [
+  "extensions" : {
+    "metadataPaths" : [
       "wrkstrm-finance.json",
       "wrkstrm-finance.reminder.json"
     ]
   },
-  "sourcePath": "private/universal/identity/wrkstrm-finance@rismay.substrate.agenda.triad.json"
+  "horizons" : [
+
+  ],
+  "initiatives" : [
+
+  ],
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+
+  ],
+  "principles" : [
+
+  ],
+  "risks" : [
+
+  ],
+  "schemaVersion" : "0.5.0",
+  "sections" : [
+
+  ],
+  "slug" : "wrkstrm-finance",
+  "sourcePath" : "private/universal/identity/wrkstrm-finance@rismay.substrate.agenda.triad.json",
+  "status" : "active",
+  "tags" : [
+
+  ],
+  "themes" : [
+    {
+      "slug" : "identity",
+      "summary" : "Keep commissioned identity in private/universal/identity/.",
+      "title" : "Identity"
+    },
+    {
+      "slug" : "state",
+      "summary" : "Keep OpenClaw runtime state in private/universal/vaults/openclaw/state/.",
+      "title" : "State"
+    }
+  ],
+  "title" : "wrkstrm Finance Agenda",
+  "updated" : "2026-03-10T07:30:00Z"
 }

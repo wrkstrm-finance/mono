@@ -71,11 +71,8 @@ playground.xcworkspace
 
 # CLIA tooling outputs
 .clia/bin/**
-.clia/tmp/**
-**/.clia/tmp/**
+**/tmp/
 .clia/logs/xcodebuild/*
 
 # Wrkstrm tooling outputs
 .wrkstrm/foundry/
-.wrkstrm/tmp/**
-**/.wrkstrm/tmp/**

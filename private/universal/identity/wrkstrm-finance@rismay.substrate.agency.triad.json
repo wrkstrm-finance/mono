@@ -1,39 +1,46 @@
 {
-  "schemaVersion": "0.5.0",
-  "slug": "wrkstrm-finance",
-  "title": "wrkstrm Finance Agency",
-  "updated": "2026-03-10T07:30:00Z",
-  "role": "wrkstrm-finance",
-  "entries": [
+  "entries" : [
     {
-      "timestamp": "2026-03-10T07:30:00Z",
-      "title": "Canonicalize collective layout",
-      "summary": "Canonicalized the root collective scaffold, commissioned identity bundle, and OpenClaw state surfaces.",
-      "tags": [
+      "contributions" : [
+        {
+          "by" : "wrkstrm-finance",
+          "types" : [
+            {
+              "evidence" : "Canonicalized the root collective scaffold, commissioned identity bundle, and OpenClaw state surfaces.",
+              "type" : "doc",
+              "weight" : 1
+            }
+          ]
+        }
+      ],
+      "summary" : "Canonicalized the root collective scaffold, commissioned identity bundle, and OpenClaw state surfaces.",
+      "tags" : [
         "canonical-layout",
         "identity",
         "openclaw"
       ],
-      "contributions": [
-        {
-          "by": "wrkstrm-finance",
-          "types": [
-            {
-              "evidence": "Canonicalized the root collective scaffold, commissioned identity bundle, and OpenClaw state surfaces.",
-              "type": "doc",
-              "weight": 1
-            }
-          ]
-        }
-      ]
+      "timestamp" : "2026-03-10T07:30:00Z",
+      "title" : "Canonicalize collective layout"
     }
   ],
-  "links": [],
-  "mentors": [],
-  "notes": [],
-  "sections": [],
-  "sourcePath": "private/universal/identity/wrkstrm-finance@rismay.substrate.agency.triad.json",
-  "tags": [
+  "links" : [
+
+  ],
+  "mentors" : [
+
+  ],
+  "notes" : [
+
+  ],
+  "schemaVersion" : "0.5.0",
+  "sections" : [
+
+  ],
+  "slug" : "wrkstrm-finance",
+  "sourcePath" : "private/universal/identity/wrkstrm-finance@rismay.substrate.agency.triad.json",
+  "tags" : [
     "collective"
-  ]
+  ],
+  "title" : "wrkstrm Finance Agency",
+  "updated" : "2026-03-10T07:30:00Z"
 }
