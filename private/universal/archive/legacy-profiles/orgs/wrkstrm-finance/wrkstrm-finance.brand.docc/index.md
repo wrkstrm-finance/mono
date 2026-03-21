@@ -1,6 +1,11 @@
-@TechnologyRoot
-
 # Brand Overview
+
+@Metadata {
+  @PageKind(article)
+  @TechnologyRoot
+}
+
+
 
 ## Topics
 

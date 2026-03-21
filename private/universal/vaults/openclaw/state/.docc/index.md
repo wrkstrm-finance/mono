@@ -1,4 +1,8 @@
 # state root
+@Metadata {
+  @PageKind(article)
+  @TechnologyRoot
+}
 
 Canonical future-proof per-collective runtime state root for OpenClaw.
 

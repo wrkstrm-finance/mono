@@ -1,44 +1,67 @@
+# wrkstrm-finance
 @Metadata {
-  @TechnologyRoot
   @PageKind(article)
-  @PageColor(gray)
-  @TitleHeading("wrkstrm Finance")
-  @Available(platform: macOS, introduced: "1.0")
+  @TechnologyRoot
 }
 
-# wrkstrm Finance
+Wrkstrm Finance is a small, composable set of finance primitives (brokers, market data, execution) designed to be:
 
-This is the canonical DocC entrypoint for the local `wrkstrm-finance` collective scaffold.
+- **Readable**: boring APIs, explicit naming, predictable behavior.
+- **Testable**: protocol-first boundaries; deterministic adapters.
+- **Composable**: small packages that layer cleanly.
 
-## Purpose
+## Repository shape
 
-- This directory is the canonical collective workspace for `wrkstrm-finance`.
-- Canonical local structure guidance for this scaffold lives in this DocC bundle.
+This repo is the **mono hub** for the wrkstrm-finance org.
 
-## Structure
+- `public/readmes/public-readme` → shared org-level README / issue templates (submodule)
+- `public/spm/universal/domain/finance/*` → Swift packages (submodules)
 
-- `private/universal/identity` - canonical commissioned identity / triad home
-- `memory/memory.docc` - canonical memory surface
-- `private/universal/vaults/openclaw/state/agent` - canonical OpenClaw agent-local state
-- `private/universal/vaults/openclaw/state/agent/auth-profiles.template.json` - committed auth template
-- `private/universal/vaults/openclaw/state/sessions` - canonical OpenClaw session store
-- `.wrkstrm/workspace.wrkstrm.json` - current CLIA workspace contract
-- `private/universal/archive/legacy-profiles` - archived copy of historical `.wrkstrm/profiles/**` content
+## Brand voice (docs + READMEs)
 
-## Local Metadata Sources
+Write like a careful engineer explaining a tool to another careful engineer.
 
-- `wrkstrm-finance.json`
-- `wrkstrm-finance.reminder.json`
+- Prefer **plain language** over marketing.
+- State **constraints** and **tradeoffs** early.
+- Avoid promises about coverage, broker support, or timelines.
+- Use short sections, concrete examples, and stable terminology.
 
-## OpenClaw Mapping
+### Vocabulary
 
-- When `wrkstrm-finance` is registered in OpenClaw, `~/.openclaw/agents/wrkstrm-finance` should resolve to the canonical workspace-owned state root.
-- `~/.openclaw/agents/wrkstrm-finance/agent` should resolve to `private/universal/vaults/openclaw/state/agent`.
-- `~/.openclaw/agents/wrkstrm-finance/sessions` should resolve to `private/universal/vaults/openclaw/state/sessions`.
+- **Broker**: external service/provider (Tradier, etc.)
+- **Adapter**: our integration layer around a broker API
+- **Domain model**: types we own and keep stable
 
-## Canon
+## DocC site direction (skeleton)
 
-- Treat this page as the canonical local structure note for `wrkstrm-finance`.
-- Keep commissioned identity in `private/universal/identity/`.
-- Do not add repo-local alias paths or compatibility symlinks.
-- If the right location is not intuitive, warn immediately and raise your voice instead of guessing.
+Primary audiences:
+
+1. Builders integrating a broker into an app or service.
+2. Maintainers adding new broker adapters.
+
+Proposed information architecture:
+
+- **Overview**
+  - What this org is (and isn’t)
+  - Package map
+- **Getting Started**
+  - Choose a broker
+  - Authenticate (where applicable)
+  - Fetch quotes / place an order (end-to-end snippet)
+- **Concepts**
+  - Accounts, positions, orders, fills
+  - Market data vs trading
+  - Error model + retries
+- **Adapters**
+  - Per-broker capabilities matrix
+  - Rate limits, sandbox behavior
+- **Contributing**
+  - Adding a broker package
+  - Testing strategy
+  - Release/versioning expectations
+
+## Next small steps
+
+- Add a tiny **capabilities matrix** to each broker adapter package.
+- Establish a shared **error taxonomy** (retryable vs terminal).
+- Add one canonical **end-to-end example** (paper trading / sandbox if available).
