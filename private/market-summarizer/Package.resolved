@@ -119,9 +119,9 @@
       }
     },
     {
-      "identity" : "wrkstrm-foundation",
+      "identity" : "swift-universal-foundation",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wrkstrm/wrkstrm-foundation.git",
+      "location" : "https://github.com/swift-universal/swift-universal-foundation.git",
       "state" : {
         "revision" : "bef19f2905b2047e1856d86969913e5be26afb38",
         "version" : "3.0.7"
