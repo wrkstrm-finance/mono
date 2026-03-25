@@ -16,7 +16,7 @@ For commissioned triads and related identity artifacts, inspect:
 
 - local structure note: `.docc/index.md`
 - commissioned identity / triads: `private/universal/identity/`
-- canonical memory: `memory/memory.docc/`
+- canonical memory: `memory/.docc/`
 - canonical OpenClaw state: `private/universal/vaults/openclaw/state/`
 
 ## Local Metadata Sources

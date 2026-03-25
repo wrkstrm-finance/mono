@@ -5,7 +5,7 @@
 1. Read the root wrapper files.
 2. Read `.docc/index.md` for the canonical local structure note.
 3. Read `private/universal/identity/` for the commissioned identity bundle.
-4. Read `memory/memory.docc/` only when durable memory is needed.
+4. Read `memory/.docc/` only when durable memory is needed.
 
 ## Canonical Path Rules
 

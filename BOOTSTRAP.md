@@ -23,13 +23,13 @@ Startup order:
 1. Read `AGENTS.md`.
 2. Read `.docc/index.md`.
 3. Read `AGENDA.md`.
-4. Read `memory.md` and then prefer `memory/memory.docc/` for actual memory reads.
+4. Read `memory.md` and then prefer `memory/.docc/` for actual memory reads.
 
 ## Canonical Places
 
 - local structure note: `.docc/index.md`
 - canonical commissioned identity / triads: `private/universal/identity/`
-- canonical memory: `memory/memory.docc/`
+- canonical memory: `memory/.docc/`
 - canonical collective-local state: `private/universal/vaults/openclaw/state/agent/`
 - canonical session store: `private/universal/vaults/openclaw/state/sessions/`
 - collective workspace contract: `.wrkstrm/workspace.wrkstrm.json`
@@ -39,7 +39,7 @@ Startup order:
 
 - Keep runtime truth centralized in canonical config and identity surfaces rather than duplicated wrappers.
 - Root workspace files act as orientation and pointer surfaces.
-- Canonical memory is DocC-first; see `memory.md` and `memory/memory.docc/`.
+- Canonical memory is DocC-first; see `memory.md` and `memory/.docc/`.
 - Keep the commissioned identity outside runtime state; use `private/universal/identity/` directly.
 - Keep `stateDir` gateway-shaped and let OpenClaw-facing paths resolve into the workspace-owned state root.
 - Do not introduce repo-local compatibility symlinks or alias paths when a canonical path already exists.

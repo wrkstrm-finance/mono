@@ -9,7 +9,7 @@ It is not a detached wishlist.
 
 - Keep the canonical root scaffold current.
 - Keep commissioned identity under `private/universal/identity/`.
-- Keep canonical memory under `memory/memory.docc/`.
+- Keep canonical memory under `memory/.docc/`.
 - Keep canonical OpenClaw runtime state under `private/universal/vaults/openclaw/state/`.
 
 ## Current routing
