@@ -39,7 +39,7 @@ let package: Package = .init(
   dependencies: [
     .package(
       name: "common-broker-schemas-v000-001-000",
-      path: "../../../universal-schemas/private/universal/schemas/common-broker-schemas/v0.1.0/spm/common-broker-schemas-v000-001-000"
+      path: "../../../universal-schemas/private/universal/domain/finance/schema-families/common-broker-schemas/v0.1.0/spm/common-broker-schemas-v000-001-000"
     ),
     localOrRemote(
       name: "CommonBroker",

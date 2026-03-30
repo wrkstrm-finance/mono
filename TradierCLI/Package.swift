@@ -22,7 +22,7 @@ let package = Package(
     ),
     .package(
       name: "tradier-schemas-v000-001-000",
-      path: "../../universal-schemas/private/universal/schemas/tradier-schemas/v0.1.0/spm/tradier-schemas-v000-001-000"
+      path: "../../universal-schemas/private/universal/domain/finance/schema-families/tradier-schemas/v0.1.0/spm/tradier-schemas-v000-001-000"
     ),
     .package(
       url: "https://github.com/apple/swift-argument-parser",
@@ -36,7 +36,7 @@ let package = Package(
         .product(name: "TradierLib", package: "swift-tradier-lib"),
         .product(name: "CommonLog", package: "common-log"),
         .product(
-          name: "TradierSchemas_v000_001_000",
+          name: "Tradier_Schemas_v000_001_000",
           package: "tradier-schemas-v000-001-000"
         ),
       ],
