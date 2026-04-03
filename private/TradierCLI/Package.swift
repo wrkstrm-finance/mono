@@ -22,7 +22,7 @@ let package = Package(
     ),
     .package(
       name: "tradier-schemas-v000-001-000",
-      path: "../../../universal-schemas/private/universal/domain/finance/schema-families/tradier-schemas/v0.1.0/spm/tradier-schemas-v000-001-000"
+      path: "../../../schema-universal/private/universal/domain/finance/schema-families/tradier-schemas/v0.1.0/spm/tradier-schemas-v000-001-000"
     ),
     .package(
       url: "https://github.com/apple/swift-argument-parser",
