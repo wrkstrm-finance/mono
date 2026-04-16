@@ -3,7 +3,11 @@
   "automationMode": "paused",
   "org": {
     "id": "wrkstrm-finance",
-    "visibility": "private"
+    "visibility": "private",
+    "owned": true,
+    "owners": [
+      "rismay"
+    ]
   },
   "policy": {
     "guardrails": [
