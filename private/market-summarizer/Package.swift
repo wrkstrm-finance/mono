@@ -8,12 +8,12 @@ func localOrRemote(path: String, url: String, from version: Version) -> Package.
 }
 
 let commonShellDependency = localOrRemote(
-  path: "../../../../swift-universal/private/spm/universal/domain/system/common-shell",
+  path: "../../../swift-universal/private/universal/spm/domain/system/common-shell",
   url: "https://github.com/swift-universal/common-shell.git",
   from: "0.0.1"
 )
 let commonCliDependency = localOrRemote(
-  path: "../../../../swift-universal/private/spm/universal/domain/system/swift-common-cli",
+  path: "../../../swift-universal/private/universal/spm/domain/system/swift-common-cli",
   url: "https://github.com/swift-universal/swift-common-cli.git",
   from: "0.1.0"
 )
@@ -60,8 +60,8 @@ let package = Package(
 
 extension ProcessInfo {
   public static var useLocalDeps: Bool {
-    guard let raw = ProcessInfo.processInfo.environment["SPM_USE_LOCAL_DEPS"] else { return true }
+    guard let raw = ProcessInfo.processInfo.environment["SPM_USE_LOCAL_DEPS"] else { return false }
     let normalized = raw.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-    return !(normalized == "0" || normalized == "false" || normalized == "no")
+    return normalized == "1" || normalized == "true" || normalized == "yes" || normalized == "on"
   }
 }

@@ -3,9 +3,9 @@ import Foundation
 import PackageDescription
 
 let useLocalDeps: Bool = {
-  guard let raw = ProcessInfo.processInfo.environment["SPM_USE_LOCAL_DEPS"] else { return true }
+  guard let raw = ProcessInfo.processInfo.environment["SPM_USE_LOCAL_DEPS"] else { return false }
   let value = raw.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
-  return !(value == "0" || value == "false" || value == "no")
+  return value == "1" || value == "true" || value == "yes" || value == "on"
 }()
 
 func localOrRemote(path: String, url: String, from version: Version) -> Package.Dependency {
@@ -32,12 +32,12 @@ let package: Package = .init(
       from: "3.0.0"
     ),
     localOrRemote(
-      path: "../../../../../../../wrkstrm/private/universal/spm/domain/system/wrkstrm-networking",
+      path: "../../../wrkstrm/private/universal/spm/domain/system/wrkstrm-networking",
       url: "https://github.com/wrkstrm/wrkstrm-networking.git",
       from: "3.0.5"
     ),
     localOrRemote(
-      path: "../../../../../../../../modules/swift-universal/private/spm/universal/domain/system/common-log",
+      path: "../../../swift-universal/private/universal/spm/domain/system/common-log",
       url: "https://github.com/swift-universal/common-log.git",
       from: "3.0.0"
     ),
