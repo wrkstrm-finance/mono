@@ -1,0 +1,11 @@
+{
+  "id": "9f6d8f4c-b0d4-4b4d-a9b0-6d83a41d2f39",
+  "created_at": "2026-04-24T20:00:00Z",
+  "symbol": "GOOG",
+  "qty": "1",
+  "type": "limit",
+  "side": "buy",
+  "time_in_force": "day",
+  "limit_price": "342.32",
+  "status": "accepted"
+}

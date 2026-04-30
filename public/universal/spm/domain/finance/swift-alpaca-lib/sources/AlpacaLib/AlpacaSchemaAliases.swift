@@ -1,0 +1,30 @@
+import AlpacaSchemas_v000_001_000
+
+public typealias AlpacaAccount = AlpacaSchemas_v000_001_000.AlpacaAccount
+public typealias AlpacaActivity = AlpacaSchemas_v000_001_000.AlpacaActivity
+public typealias AlpacaAsset = AlpacaSchemas_v000_001_000.AlpacaAsset
+public typealias AlpacaBar = AlpacaSchemas_v000_001_000.AlpacaBar
+public typealias AlpacaBarsResponse = AlpacaSchemas_v000_001_000.AlpacaBarsResponse
+public typealias AlpacaCalendarDay = AlpacaSchemas_v000_001_000.AlpacaCalendarDay
+public typealias AlpacaClock = AlpacaSchemas_v000_001_000.AlpacaClock
+public typealias AlpacaLatestStockQuoteResponse =
+  AlpacaSchemas_v000_001_000.AlpacaLatestStockQuoteResponse
+public typealias AlpacaOptionContract = AlpacaSchemas_v000_001_000.AlpacaOptionContract
+public typealias AlpacaOptionContractsResponse =
+  AlpacaSchemas_v000_001_000.AlpacaOptionContractsResponse
+public typealias AlpacaOptionGreeks = AlpacaSchemas_v000_001_000.AlpacaOptionGreeks
+public typealias AlpacaOptionQuote = AlpacaSchemas_v000_001_000.AlpacaOptionQuote
+public typealias AlpacaOptionSnapshot = AlpacaSchemas_v000_001_000.AlpacaOptionSnapshot
+public typealias AlpacaOptionSnapshotsResponse =
+  AlpacaSchemas_v000_001_000.AlpacaOptionSnapshotsResponse
+public typealias AlpacaOptionTrade = AlpacaSchemas_v000_001_000.AlpacaOptionTrade
+public typealias AlpacaOrder = AlpacaSchemas_v000_001_000.AlpacaOrder
+public typealias AlpacaOrderRequest = AlpacaSchemas_v000_001_000.AlpacaOrderRequest
+public typealias AlpacaPosition = AlpacaSchemas_v000_001_000.AlpacaPosition
+public typealias AlpacaReplaceOrderRequest =
+  AlpacaSchemas_v000_001_000.AlpacaReplaceOrderRequest
+public typealias AlpacaStockQuote = AlpacaSchemas_v000_001_000.AlpacaStockQuote
+public typealias AlpacaWatchlist = AlpacaSchemas_v000_001_000.AlpacaWatchlist
+public typealias AlpacaWatchlistRequest = AlpacaSchemas_v000_001_000.AlpacaWatchlistRequest
+public typealias AlpacaWatchlistSymbolRequest =
+  AlpacaSchemas_v000_001_000.AlpacaWatchlistSymbolRequest

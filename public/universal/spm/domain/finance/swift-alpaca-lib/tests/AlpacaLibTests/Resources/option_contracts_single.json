@@ -1,0 +1,19 @@
+{
+  "option_contracts": [
+    {
+      "id": "contract-1",
+      "symbol": "AAPL260116C00195000",
+      "name": "AAPL Jan 16 2026 195 Call",
+      "status": "active",
+      "tradable": true,
+      "expiration_date": "2026-01-16",
+      "root_symbol": "AAPL",
+      "underlying_symbol": "AAPL",
+      "type": "call",
+      "style": "american",
+      "strike_price": "195",
+      "size": "100"
+    }
+  ],
+  "next_page_token": null
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "asset_id": "asset-1",
+    "symbol": "GOOG",
+    "exchange": "NASDAQ",
+    "asset_class": "us_equity",
+    "avg_entry_price": "300.50",
+    "qty": "2",
+    "side": "long",
+    "market_value": "684.64",
+    "cost_basis": "601.00"
+  }
+]

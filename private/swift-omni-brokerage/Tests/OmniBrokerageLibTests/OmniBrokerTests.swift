@@ -28,8 +28,26 @@ func initDoesNotCrash() async throws {
 @Test
 func capabilityMatrix() async throws {
   let expected: [Broker: Set<BrokerageService>] = [
+    .alpaca: [
+      .auth,
+      .account,
+      .secret,
+      .quote,
+      .quoteVariants,
+      .options,
+      .optionQuote,
+      .optionGreeks,
+      .market,
+      .profile,
+      .positions,
+      .activity,
+      .order,
+      .orders,
+      .reference,
+      .watchlist,
+    ],
     .schwab: [.auth, .account, .quote, .watchlist],
-    .tradier: [.auth, .account, .quote, .greeks, .watchlist, .positionStreaming],
+    .tradier: [.auth, .account, .quote, .optionGreeks, .watchlist, .positionStreaming],
     .public: [.auth, .account, .quote],
     .tastytrade: [.auth, .account],
   ]
@@ -39,6 +57,54 @@ func capabilityMatrix() async throws {
       #expect(caps.supports(service))
     }
   }
+}
+
+@Test
+func alpacaQuoteRouting() async throws {
+  struct StubQuoteService: CommonQuoteVariantService {
+    let serviceName = "Alpaca"
+    let serviceType: ServiceType = .sandbox
+
+    func quoteVariant(
+      for symbol: String,
+      accountId _: String,
+      detail _: QuoteDetail
+    ) async throws -> CommonQuoteVariant {
+      .slim(
+        CommonBrokerageQuoteEssentialsModel(
+          symbol: symbol,
+          last: nil,
+          change: nil,
+          changePercentage: nil,
+          bid: 342.31,
+          ask: 342.35,
+          volume: nil,
+          timestamp: nil
+        )
+      )
+    }
+
+    func quotesVariant(
+      for symbols: [String],
+      accountId: String,
+      detail: QuoteDetail
+    ) async throws -> [CommonQuoteVariant] {
+      var variants: [CommonQuoteVariant] = []
+      for symbol in symbols {
+        let variant = try await quoteVariant(for: symbol, accountId: accountId, detail: detail)
+        variants.append(variant)
+      }
+      return variants
+    }
+  }
+
+  let broker = OmniBroker(
+    defaultBroker: .alpaca,
+    alpacaQuoteService: StubQuoteService()
+  )
+
+  let quote = try await broker.quote(for: "GOOG", accountId: "acct-1")
+  #expect(quote.last == nil)
 }
 
 @Test

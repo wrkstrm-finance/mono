@@ -15,6 +15,9 @@ This repo is the mono hub for the `wrkstrm-finance` org.
 - `public/spm/universal/domain/finance/*` -> public Swift packages
 - `private/*` -> private tools, agent profiles, and workspace-local docs
 
+Current broker packages include `common-broker`, `swift-alpaca-lib`,
+`swift-public-brokerage-lib`, and `swift-tradier-lib`.
+
 ## Brand voice
 
 Write like a careful engineer explaining a tool to another careful engineer.

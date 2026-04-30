@@ -1,0 +1,17 @@
+[
+  {
+    "id": "watchlist-1",
+    "name": "Tech",
+    "assets": [
+      {
+        "id": "asset-1",
+        "class": "us_equity",
+        "exchange": "NASDAQ",
+        "symbol": "GOOG",
+        "name": "Alphabet Inc.",
+        "status": "active",
+        "tradable": true
+      }
+    ]
+  }
+]

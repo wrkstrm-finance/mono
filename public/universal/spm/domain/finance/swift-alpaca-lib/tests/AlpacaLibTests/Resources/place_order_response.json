@@ -1,0 +1,12 @@
+{
+  "id": "order-1",
+  "client_order_id": "client-1",
+  "created_at": "2026-04-24T20:00:00Z",
+  "symbol": "GOOG",
+  "qty": "1",
+  "type": "limit",
+  "side": "buy",
+  "time_in_force": "day",
+  "limit_price": "342.32",
+  "status": "accepted"
+}

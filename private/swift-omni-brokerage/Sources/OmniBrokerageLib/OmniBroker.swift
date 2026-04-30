@@ -1,3 +1,5 @@
+import AlpacaBrokerageCommonAdapters
+import AlpacaLib
 import CommonBroker
 import CommonBrokerSchemas_v000_001_000
 import PublicBrokerageCommonAdapters
@@ -5,12 +7,14 @@ import PublicBrokerageLib
 import TradierBrokerageCommonAdapters
 
 public enum OmniBrokerError: Error, Sendable {
+  case missingAlpacaQuoteService
   case missingPublicQuoteService
   case unsupportedBroker(Broker)
 }
 
 public actor OmniBroker {
   private let defaultBroker: Broker
+  private let alpacaQuoteService: (any CommonQuoteVariantService)?
   private let tradierQuoteService: any CommonQuoteVariantService
   private let publicQuoteService: (any CommonQuoteVariantService)?
   private let accountService: any AccountService
@@ -18,12 +22,14 @@ public actor OmniBroker {
 
   public init(
     defaultBroker: Broker = .tradier,
+    alpacaQuoteService: (any CommonQuoteVariantService)? = nil,
     tradierQuoteService: any CommonQuoteVariantService = TradierSandboxQuoteService(),
     publicQuoteService: (any CommonQuoteVariantService)? = nil,
     accountService: any AccountService = TradierAccountService(),
     authService: any AuthService = StaticAuthService(),
   ) {
     self.defaultBroker = defaultBroker
+    self.alpacaQuoteService = alpacaQuoteService
     self.tradierQuoteService = tradierQuoteService
     self.publicQuoteService = publicQuoteService
     self.accountService = accountService
@@ -40,11 +46,36 @@ public actor OmniBroker {
   ) {
     self.init(
       defaultBroker: defaultBroker,
+      alpacaQuoteService: nil,
       tradierQuoteService: tradierQuoteService,
       publicQuoteService: PublicQuoteCommonService(
         client: publicClient,
         serviceType: publicServiceType
       ),
+      accountService: accountService,
+      authService: authService
+    )
+  }
+
+  public init(
+    alpacaClient: AlpacaClient,
+    alpacaFeed: String? = "iex",
+    alpacaServiceType: ServiceType = .sandbox,
+    defaultBroker: Broker = .alpaca,
+    tradierQuoteService: any CommonQuoteVariantService = TradierSandboxQuoteService(),
+    publicQuoteService: (any CommonQuoteVariantService)? = nil,
+    accountService: any AccountService = TradierAccountService(),
+    authService: any AuthService = StaticAuthService(),
+  ) {
+    self.init(
+      defaultBroker: defaultBroker,
+      alpacaQuoteService: AlpacaQuoteService(
+        client: alpacaClient,
+        feed: alpacaFeed,
+        serviceType: alpacaServiceType
+      ),
+      tradierQuoteService: tradierQuoteService,
+      publicQuoteService: publicQuoteService,
       accountService: accountService,
       authService: authService
     )
@@ -83,6 +114,9 @@ public actor OmniBroker {
 
   private func quoteService(for broker: Broker) throws -> any CommonQuoteVariantService {
     switch broker {
+    case .alpaca:
+      guard let alpacaQuoteService else { throw OmniBrokerError.missingAlpacaQuoteService }
+      return alpacaQuoteService
     case .tradier:
       return tradierQuoteService
     case .public:
