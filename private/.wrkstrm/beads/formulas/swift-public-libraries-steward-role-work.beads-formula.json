@@ -1,0 +1,30 @@
+{
+  "formula": "swift-public-libraries-steward-role-work",
+  "description": "Beads formula for Swift Public Libraries Steward role work.",
+  "version": 1,
+  "formulaType": "workflow",
+  "source": "private/universal/workstream-templates/swift-public-libraries-steward-role-work.workstream-template.json",
+  "steps": [
+    {
+      "id": "public-library-map",
+      "title": "Map public Swift library domains, service boundaries, and compatibility constraints.",
+      "stepType": "task"
+    },
+    {
+      "id": "public-library-refactor",
+      "title": "Move client methods, Codable models, request types, and domain folders into the approved service structure.",
+      "stepType": "task",
+      "needs": [
+        "public-library-map"
+      ]
+    },
+    {
+      "id": "public-library-verify",
+      "title": "Verify DocC, examples, builds, tests, and source compatibility.",
+      "stepType": "task",
+      "needs": [
+        "public-library-refactor"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "org-role",
+  "slug": "swift-public-libraries-steward",
+  "orgRoleIdentitySlug": "swift-public-libraries-steward@wrkstm-finance",
+  "title": "Wrkstrm Finance Public Library Steward",
+  "status": "draft",
+  "updated": "2026-05-01T09:13:56Z",
+  "sourcePath": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json#public-libraries-steward",
+  "currentSeatScope": "wrkstrm-finance-public-libraries",
+  "purpose": "Steward wrkstrm-finance public Swift libraries so API coverage, domain service boundaries, DocC, tests, and source compatibility stay coherent across broker and client integrations.",
+  "focusDomains": [
+    {
+      "identifier": "public-swift-libraries",
+      "label": "Public Swift libraries",
+      "weight": 3
+    },
+    {
+      "identifier": "domain-service-structure",
+      "label": "Domain service structure",
+      "weight": 3
+    },
+    {
+      "identifier": "broker-api-coverage",
+      "label": "Broker API coverage",
+      "weight": 2
+    },
+    {
+      "identifier": "docc-and-examples",
+      "label": "DocC and examples",
+      "weight": 2
+    },
+    {
+      "identifier": "source-compatibility",
+      "label": "Source compatibility",
+      "weight": 2
+    }
+  ],
+  "interfaces": [
+    {
+      "with": "swift-product-manager",
+      "responsibilities": [
+        "Coordinate public surface area, scope boundaries, and release framing."
+      ]
+    },
+    {
+      "with": "swift-documentation",
+      "responsibilities": [
+        "Coordinate DocC articles, tutorials, and terminology."
+      ]
+    },
+    {
+      "with": "swift-testing",
+      "responsibilities": [
+        "Coordinate package build and test gates."
+      ]
+    },
+    {
+      "with": "swift-architect",
+      "responsibilities": [
+        "Coordinate service boundaries and reusable abstractions."
+      ]
+    }
+  ],
+  "contributionMix": {
+    "primary": [
+      {
+        "type": "code",
+        "weight": 3
+      },
+      {
+        "type": "doc",
+        "weight": 3
+      },
+      {
+        "type": "review",
+        "weight": 2
+      },
+      {
+        "type": "infra",
+        "weight": 1
+      }
+    ],
+    "secondary": [
+      {
+        "type": "test",
+        "weight": 1
+      },
+      {
+        "type": "design",
+        "weight": 1
+      }
+    ]
+  },
+  "objectives": [
+    "Keep public Swift package APIs clear, documented, tested, and source-compatible.",
+    "Make service boundaries legible enough that downstream products can adopt them without reading implementation internals.",
+    "Track follow-up integration work for shared broker abstractions and service adapters."
+  ],
+  "responsibilities": [
+    "Maintain domain-oriented service structures for public Swift libraries such as PublicLib and sibling broker clients.",
+    "Keep request, response, and model types discoverable by service domain without breaking existing consumers.",
+    "Ensure DocC catalogs, tutorials, and getting-started examples explain real entry points and supported coverage.",
+    "Coordinate build, test, and compatibility verification before public-library refactors are considered done.",
+    "Track follow-up integration work for shared broker abstractions such as OmniBroker and Common service adapters."
+  ],
+  "guardrails": [
+    "Automation: use Swift-based launchpad/scratch tools (SPM) and avoid Python for repository automation.",
+    "Keep public API changes source-compatible unless a versioned migration is explicitly approved.",
+    "Public documentation must describe the real module boundaries and supported API coverage."
+  ],
+  "workstreamTemplateRefs": [
+    {
+      "slug": "swift-public-libraries-steward-role-work"
+    }
+  ],
+  "operatingProtocolRefs": [],
+  "tags": [
+    "beads-formula-ref",
+    "brokerage",
+    "docc",
+    "org-role",
+    "public-libraries",
+    "substrate-role",
+    "swift",
+    "workstream-template-ref",
+    "wrkstrm-finance"
+  ],
+  "links": [
+    {
+      "title": "Tau canonical agenda import source",
+      "url": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json"
+    },
+    {
+      "title": "wrkstrm-finance Tau local agenda source",
+      "url": "private/.wrkstrm/agents/tau/tau@mono.agenda.triad.json"
+    }
+  ],
+  "notes": [
+    {
+      "author": "substrate",
+      "date": "2026-05-01",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "OrgRoleModel packet for the durable role mandate. Runtime agents may serve this role, but the role is not an agent."
+          ]
+        }
+      ]
+    },
+    {
+      "author": "codex",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "Created after wrkstrm-finance Public Libraries Steward work was found embedded inside Tau agenda sections. This role owns the reusable mandate; agents or collectives can later instantiate it through positions or assignments."
+          ]
+        }
+      ],
+      "date": "2026-05-01"
+    },
+    {
+      "author": "codex",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "This agenda captures the wrkstrm-finance public library steward mandate that had been embedded as imported sections in Tau's agenda."
+          ]
+        }
+      ],
+      "date": "2026-05-01"
+    },
+    {
+      "author": "codex",
+      "date": "2026-05-01",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "Collapsed the temporary split role home into the wrkstrm-finance flat org-role bank standard. The role remains org-owned; agents can fill positions that instantiate it."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "items": [
+        "Own the wrkstrm-finance public-library stewardship mandate independently from any product steward or runtime agent.",
+        "Keep public Swift package APIs clear, documented, tested, and source-compatible.",
+        "Make service boundaries legible enough that downstream products can adopt them without reading implementation internals."
+      ],
+      "kind": "bullets",
+      "slug": "mandate",
+      "title": "Mandate"
+    },
+    {
+      "items": [
+        "Works with Product Manager roles on public surface area, scope, and release framing.",
+        "Works with Documentation Steward on DocC articles, tutorials, and terminology.",
+        "Works with Testing roles on package build and test gates.",
+        "Works with Swift Architect roles on service boundaries and reusable abstractions."
+      ],
+      "kind": "bullets",
+      "slug": "interfaces",
+      "title": "Interfaces"
+    },
+    {
+      "items": [
+        "Domain service maps for public Swift packages.",
+        "DocC catalogs and examples for library consumers.",
+        "Compatibility notes for renamed, moved, or newly wrapped APIs.",
+        "Verification records for builds, tests, and doc builds."
+      ],
+      "kind": "bullets",
+      "slug": "deliverables",
+      "title": "Deliverables"
+    },
+    {
+      "items": [
+        "Responsible: Wrkstrm Finance Public Library Steward role",
+        "Accountable: Owning maintainer or collective",
+        "Consulted: Product Manager, Documentation Steward, Testing Agent, Swift Architect",
+        "Informed: Product stewards and downstream app owners"
+      ],
+      "kind": "bullets",
+      "slug": "raci",
+      "title": "RACI"
+    }
+  ],
+  "extensions": {
+    "taskPlaneRefs": {
+      "workstreamTemplateRefs": [
+        {
+          "slug": "swift-public-libraries-steward-role-work",
+          "path": "private/universal/workstream-templates/swift-public-libraries-steward-role-work.workstream-template.json"
+        }
+      ],
+      "beadsFormulaRefs": [
+        {
+          "formula": "swift-public-libraries-steward-role-work",
+          "path": "private/.wrkstrm/beads/formulas/swift-public-libraries-steward-role-work.beads-formula.json"
+        }
+      ]
+    }
+  }
+}

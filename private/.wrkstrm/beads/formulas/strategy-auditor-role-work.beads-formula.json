@@ -1,0 +1,30 @@
+{
+  "formula": "strategy-auditor-role-work",
+  "description": "Beads formula for Strategy Auditor role work.",
+  "version": 1,
+  "formulaType": "workflow",
+  "source": "private/universal/workstream-templates/strategy-auditor-role-work.workstream-template.json",
+  "steps": [
+    {
+      "id": "strategy-audit-inputs",
+      "title": "Collect strategy, sleeve, market, broker, and journal inputs.",
+      "stepType": "task"
+    },
+    {
+      "id": "strategy-audit-risk",
+      "title": "Compute Delta skew, vega/theta equilibrium, convexity, stress, and drift signals.",
+      "stepType": "task",
+      "needs": [
+        "strategy-audit-inputs"
+      ]
+    },
+    {
+      "id": "strategy-audit-governance",
+      "title": "Publish audit views, dashboards, PDFs, and governance exception feeds.",
+      "stepType": "task",
+      "needs": [
+        "strategy-audit-risk"
+      ]
+    }
+  ]
+}

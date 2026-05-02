@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "0.1.0",
+  "slug": "strategy-auditor-role-work",
+  "title": "Strategy Auditor Role Work",
+  "updated": "2026-05-01T09:20:00Z",
+  "summary": "Reusable wrkstrm-finance workstream template for strategy risk audit and governance exception work.",
+  "sourcePath": "private/universal/roles/strategy-auditor.org-role.json",
+  "instructions": [
+    "Use this template when instantiating concrete Strategy Auditor work.",
+    "Bind audit outputs to current journal, broker, and market inputs.",
+    "Do not treat this reusable template as evidence that a live strategy audit happened."
+  ],
+  "outcomes": [
+    "Risk dashboards and audit views are repeatable.",
+    "Drift, sleeve risk, and governance exceptions have source-backed evidence."
+  ],
+  "tasks": [
+    {
+      "level": "required",
+      "text": "Compute Delta skew and vega/theta equilibrium across open strategies."
+    },
+    {
+      "level": "required",
+      "text": "Flag convexity risk hot spots and produce Notion audit entries."
+    },
+    {
+      "level": "optional",
+      "text": "Automated governance trend reporting with exception feeds to Patch."
+    },
+    {
+      "level": "optional",
+      "text": "Add vanna/volga approximations; stress testing scenarios."
+    },
+    {
+      "level": "required",
+      "text": "Audit views for governance."
+    },
+    {
+      "level": "required",
+      "text": "Define sleeve risk metrics and alert thresholds."
+    },
+    {
+      "level": "required",
+      "text": "Implement exposure dashboards and PDF audits."
+    },
+    {
+      "level": "optional",
+      "text": "ROC vs sleeve capacity dashboards."
+    },
+    {
+      "level": "optional",
+      "text": "Drift detection and repair suggestions."
+    }
+  ]
+}

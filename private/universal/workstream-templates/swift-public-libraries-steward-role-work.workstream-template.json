@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "slug": "swift-public-libraries-steward-role-work",
+  "title": "Swift Public Libraries Steward Role Work",
+  "updated": "2026-05-01T09:20:00Z",
+  "summary": "Reusable wrkstrm-finance workstream template for public Swift library stewardship.",
+  "sourcePath": "private/universal/roles/swift-public-libraries-steward.org-role.json",
+  "instructions": [
+    "Use this template when instantiating concrete public-library stewardship work.",
+    "Preserve source compatibility unless a versioned migration is approved.",
+    "Keep DocC, tests, and service boundaries aligned with the real Swift package surface."
+  ],
+  "outcomes": [
+    "Public Swift library APIs are documented, tested, and coherent.",
+    "Broker service boundaries remain legible to downstream consumers."
+  ],
+  "tasks": [
+    {
+      "level": "required",
+      "text": "Refactor PublicLib to mirror the OmniBroker/TradierLib domain-oriented service structure."
+    },
+    {
+      "level": "required",
+      "text": "Introduce per-domain folders under Sources/PublicLib for quote, order, activity, positions, profile, auth, and streaming surfaces as supported."
+    },
+    {
+      "level": "required",
+      "text": "Move domain methods into PublicClient extensions and move Codable models and request types into matching domain folders."
+    },
+    {
+      "level": "required",
+      "text": "Add minimal DocC articles and tutorials mirroring the TradierLib pattern."
+    },
+    {
+      "level": "required",
+      "text": "Verify swift build and targeted tests before treating the stewardship pass as complete."
+    }
+  ]
+}

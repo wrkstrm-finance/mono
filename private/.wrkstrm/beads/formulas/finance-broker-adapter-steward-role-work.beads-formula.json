@@ -1,0 +1,30 @@
+{
+  "formula": "finance-broker-adapter-steward-role-work",
+  "description": "Beads formula for Finance Broker Adapter Steward role work.",
+  "version": 1,
+  "formulaType": "workflow",
+  "source": "private/universal/workstream-templates/finance-broker-adapter-steward-role-work.workstream-template.json",
+  "steps": [
+    {
+      "id": "adapter-schema-inventory",
+      "title": "Define schema inventory and link rules for Markets, Sectors, and Positions.",
+      "stepType": "task"
+    },
+    {
+      "id": "adapter-broker-market-contracts",
+      "title": "Implement broker and market adapter contracts for positions, greeks, and market data.",
+      "stepType": "task",
+      "needs": [
+        "adapter-schema-inventory"
+      ]
+    },
+    {
+      "id": "adapter-anomaly-hooks",
+      "title": "Add anomaly detection hooks and adapter output receipts for consuming roles.",
+      "stepType": "task",
+      "needs": [
+        "adapter-broker-market-contracts"
+      ]
+    }
+  ]
+}

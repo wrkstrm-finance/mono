@@ -1,0 +1,30 @@
+{
+  "formula": "trade-journaler-role-work",
+  "description": "Beads formula for Trade Journaler role work.",
+  "version": 1,
+  "formulaType": "workflow",
+  "source": "private/universal/workstream-templates/trade-journaler-role-work.workstream-template.json",
+  "steps": [
+    {
+      "id": "trade-journal-ingest",
+      "title": "Capture fills and align Notion schema, API integration, and de-duplication.",
+      "stepType": "task"
+    },
+    {
+      "id": "trade-journal-evidence",
+      "title": "Write entity-aware journal records with sleeve metrics, preflight checks, and audit snapshots.",
+      "stepType": "task",
+      "needs": [
+        "trade-journal-ingest"
+      ]
+    },
+    {
+      "id": "trade-journal-reconcile",
+      "title": "Run broker-statement reconciliation, export archives, and audit packs.",
+      "stepType": "task",
+      "needs": [
+        "trade-journal-evidence"
+      ]
+    }
+  ]
+}

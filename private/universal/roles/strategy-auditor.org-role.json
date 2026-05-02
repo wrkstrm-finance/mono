@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "org-role",
+  "slug": "strategy-auditor",
+  "orgRoleIdentitySlug": "strategy-auditor@wrkstm-finance",
+  "title": "Wrkstrm Finance Strategy Auditor",
+  "status": "draft",
+  "updated": "2026-05-01T09:14:09Z",
+  "sourcePath": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json#finance-role-migration",
+  "currentSeatScope": "wrkstrm-finance-strategy-audit",
+  "purpose": "Own the reusable wrkstrm-finance mandate for strategy risk audits, exposure dashboards, drift detection, and governance exception feeds.",
+  "focusDomains": [
+    {
+      "identifier": "strategy-risk-audits",
+      "label": "Strategy risk audits",
+      "weight": 3
+    },
+    {
+      "identifier": "greeks-and-volatility",
+      "label": "Greeks and volatility",
+      "weight": 3
+    },
+    {
+      "identifier": "sleeve-risk",
+      "label": "Sleeve risk",
+      "weight": 2
+    },
+    {
+      "identifier": "governance-exceptions",
+      "label": "Governance exceptions",
+      "weight": 2
+    }
+  ],
+  "interfaces": [
+    {
+      "with": "market-summarizer",
+      "responsibilities": [
+        "Consume market, sector, IV, and unusual-flow summaries for audit context."
+      ]
+    },
+    {
+      "with": "trade-journaler",
+      "responsibilities": [
+        "Use journaled positions and sleeve capacity records as audit inputs."
+      ]
+    },
+    {
+      "with": "exit-whisper",
+      "responsibilities": [
+        "Provide risk and drift signals that can inform exit recommendations."
+      ]
+    }
+  ],
+  "contributionMix": {
+    "primary": [
+      {
+        "type": "analysis",
+        "weight": 3
+      },
+      {
+        "type": "risk",
+        "weight": 3
+      },
+      {
+        "type": "governance",
+        "weight": 2
+      }
+    ],
+    "secondary": [
+      {
+        "type": "doc",
+        "weight": 1
+      }
+    ]
+  },
+  "objectives": [
+    "Make strategy risk visible through repeatable audit views and exception feeds.",
+    "Keep sleeve risk metrics, exposure dashboards, and drift detection owned by the role rather than Tau's agenda.",
+    "Separate planned audit capability from actual governance evidence."
+  ],
+  "responsibilities": [
+    "Compute delta skew, vega/theta equilibrium, convexity risk, and approximation-based stress scenarios.",
+    "Define sleeve risk metrics, thresholds, exposure dashboards, and return-on-capacity views.",
+    "Create governance audit entries only when backed by current journal and market evidence.",
+    "Route exception feeds to the appropriate governance or workstream surface."
+  ],
+  "guardrails": [
+    "Planned audit work is not evidence that a live portfolio was audited.",
+    "Audit entries must identify their source journal, market, and adapter inputs.",
+    "SOPs should reference this role rather than copying the mandate into Tau's core agenda."
+  ],
+  "workstreamTemplateRefs": [
+    {
+      "slug": "strategy-auditor-role-work"
+    }
+  ],
+  "operatingProtocolRefs": [],
+  "tags": [
+    "audit",
+    "beads-formula-ref",
+    "governance",
+    "org-role",
+    "planned-work",
+    "risk",
+    "workstream-template-ref",
+    "wrkstrm-finance"
+  ],
+  "links": [
+    {
+      "title": "Tau canonical agenda migration source",
+      "url": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json"
+    },
+    {
+      "title": "wrkstrm-finance Tau mirror migration source",
+      "url": "private/.wrkstrm/agents/tau/tau@mono.agenda.triad.json"
+    }
+  ],
+  "notes": [
+    {
+      "author": "codex",
+      "date": "2026-05-01",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "Migrated from Tau's agenda because risk auditing and governance exception handling are wrkstrm-finance role responsibilities."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "slug": "mandate",
+      "title": "Mandate",
+      "kind": "bullets",
+      "items": [
+        "Own strategy and sleeve risk audit definitions.",
+        "Keep audit outputs traceable to current market, broker, and journal inputs.",
+        "Produce governance exceptions without conflating planned checks with completed reviews."
+      ]
+    }
+  ],
+  "extensions": {
+    "taskPlaneRefs": {
+      "workstreamTemplateRefs": [
+        {
+          "slug": "strategy-auditor-role-work",
+          "path": "private/universal/workstream-templates/strategy-auditor-role-work.workstream-template.json"
+        }
+      ],
+      "beadsFormulaRefs": [
+        {
+          "formula": "strategy-auditor-role-work",
+          "path": "private/.wrkstrm/beads/formulas/strategy-auditor-role-work.beads-formula.json"
+        }
+      ]
+    }
+  }
+}

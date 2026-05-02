@@ -1,0 +1,51 @@
+{
+  "schemaVersion": "0.1.0",
+  "slug": "market-summarizer-role-work",
+  "title": "Market Summarizer Role Work",
+  "updated": "2026-05-01T09:20:00Z",
+  "summary": "Reusable wrkstrm-finance workstream template for market-summary delivery work previously embedded in Tau agenda milestones.",
+  "sourcePath": "private/universal/roles/market-summarizer.org-role.json",
+  "instructions": [
+    "Use this template when instantiating concrete Market Summarizer work.",
+    "Keep summary artifacts, source data, and governance exports linked from the instantiated workstream or thread.",
+    "Do not treat this reusable template as evidence that a summary was produced."
+  ],
+  "outcomes": [
+    "Daily and periodic market summaries have traceable inputs and archived outputs.",
+    "Sector, IV, unusual-flow, and governance trend reporting has a reusable execution path."
+  ],
+  "tasks": [
+    {
+      "level": "required",
+      "text": "Publish daily EOD summaries; archive MD/JSON to governance store."
+    },
+    {
+      "level": "required",
+      "text": "Integrate unusual flow and IV shift analytics; sector heatmap."
+    },
+    {
+      "level": "required",
+      "text": "Automated governance trends and DocC exports."
+    },
+    {
+      "level": "required",
+      "text": "Baseline summary template and sector/IV/UOA sections."
+    },
+    {
+      "level": "required",
+      "text": "Multi-tenant summaries by sleeve/entity and automated governance reports."
+    },
+    {
+      "level": "optional",
+      "text": "Automated periodic governance packs and entity-level roll-ups."
+    },
+    {
+      "level": "optional",
+      "text": "Cross-project semantic graph with lineage and provenance."
+    },
+    {
+      "level": "required",
+      "text": "Schedule and failure notifications."
+    }
+  ]
+}

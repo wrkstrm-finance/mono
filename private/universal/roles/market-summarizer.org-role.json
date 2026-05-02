@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "org-role",
+  "slug": "market-summarizer",
+  "orgRoleIdentitySlug": "market-summarizer@wrkstm-finance",
+  "title": "Wrkstrm Finance Market Summarizer",
+  "status": "draft",
+  "updated": "2026-05-01T09:14:09Z",
+  "sourcePath": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json#finance-role-migration",
+  "currentSeatScope": "wrkstrm-finance-market-summary",
+  "purpose": "Own the reusable wrkstrm-finance mandate for daily market summaries, sector and IV readouts, governance exports, and summary delivery operations.",
+  "focusDomains": [
+    {
+      "identifier": "daily-market-summaries",
+      "label": "Daily market summaries",
+      "weight": 3
+    },
+    {
+      "identifier": "sector-and-iv-analytics",
+      "label": "Sector and IV analytics",
+      "weight": 3
+    },
+    {
+      "identifier": "governance-exports",
+      "label": "Governance exports",
+      "weight": 2
+    },
+    {
+      "identifier": "summary-delivery-ops",
+      "label": "Summary delivery operations",
+      "weight": 2
+    }
+  ],
+  "interfaces": [
+    {
+      "with": "strategy-auditor",
+      "responsibilities": [
+        "Share sector, IV, unusual-flow, and governance trend signals for audit views."
+      ]
+    },
+    {
+      "with": "trade-journaler",
+      "responsibilities": [
+        "Coordinate summary archives with journal and governance evidence stores."
+      ]
+    },
+    {
+      "with": "finance-broker-adapter-steward",
+      "responsibilities": [
+        "Consume broker and market adapter outputs through stable schemas."
+      ]
+    }
+  ],
+  "contributionMix": {
+    "primary": [
+      {
+        "type": "analysis",
+        "weight": 3
+      },
+      {
+        "type": "doc",
+        "weight": 3
+      },
+      {
+        "type": "automation",
+        "weight": 2
+      }
+    ],
+    "secondary": [
+      {
+        "type": "governance",
+        "weight": 2
+      }
+    ]
+  },
+  "objectives": [
+    "Produce repeatable daily end-of-day market summaries for wrkstrm-finance governance surfaces.",
+    "Keep sector, IV, unusual-flow, and trend reporting traceable to source data and export artifacts.",
+    "Move summary scheduling and failure handling into role-owned SOPs instead of Tau's core agenda."
+  ],
+  "responsibilities": [
+    "Maintain baseline summary templates and sections for sector, implied volatility, and unusual options activity.",
+    "Archive summary output as Markdown and JSON where governance records can cite it.",
+    "Coordinate multi-tenant summary variants by sleeve and entity.",
+    "Publish failure notifications and retry expectations for scheduled summary jobs."
+  ],
+  "guardrails": [
+    "Planned work in this role is not evidence that finance actions were completed.",
+    "Execution evidence belongs in chronicle entries, workstream or thread records, commits, broker receipts, or governance exports.",
+    "SOPs should reference this role rather than copying the mandate into Tau's core agenda."
+  ],
+  "workstreamTemplateRefs": [
+    {
+      "slug": "market-summarizer-role-work"
+    }
+  ],
+  "operatingProtocolRefs": [],
+  "tags": [
+    "beads-formula-ref",
+    "governance",
+    "market-summary",
+    "org-role",
+    "planned-work",
+    "workstream-template-ref",
+    "wrkstrm-finance"
+  ],
+  "links": [
+    {
+      "title": "Tau canonical agenda migration source",
+      "url": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json"
+    },
+    {
+      "title": "wrkstrm-finance Tau mirror migration source",
+      "url": "private/.wrkstrm/agents/tau/tau@mono.agenda.triad.json"
+    }
+  ],
+  "notes": [
+    {
+      "author": "codex",
+      "date": "2026-05-01",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "Migrated from Tau's agenda because these items describe a wrkstrm-finance reusable role and SOP surface, not Tau's core life or product agenda."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "slug": "mandate",
+      "title": "Mandate",
+      "kind": "bullets",
+      "items": [
+        "Own daily market summary generation and governance-ready summary exports.",
+        "Keep summary evidence traceable to market data, broker data, and generated artifacts.",
+        "Turn recurring summary work into role-owned SOPs that positions and assignments can instantiate."
+      ]
+    }
+  ],
+  "extensions": {
+    "taskPlaneRefs": {
+      "workstreamTemplateRefs": [
+        {
+          "slug": "market-summarizer-role-work",
+          "path": "private/universal/workstream-templates/market-summarizer-role-work.workstream-template.json"
+        }
+      ],
+      "beadsFormulaRefs": [
+        {
+          "formula": "market-summarizer-role-work",
+          "path": "private/.wrkstrm/beads/formulas/market-summarizer-role-work.beads-formula.json"
+        }
+      ]
+    }
+  }
+}

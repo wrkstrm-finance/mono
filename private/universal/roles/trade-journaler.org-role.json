@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "org-role",
+  "slug": "trade-journaler",
+  "orgRoleIdentitySlug": "trade-journaler@wrkstm-finance",
+  "title": "Wrkstrm Finance Trade Journaler",
+  "status": "draft",
+  "updated": "2026-05-01T09:14:09Z",
+  "sourcePath": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json#finance-role-migration",
+  "currentSeatScope": "wrkstrm-finance-trade-journal",
+  "purpose": "Own the reusable wrkstrm-finance mandate for execution capture, entity-aware trade journaling, Notion synchronization, reconciliation, and audit-pack preparation.",
+  "focusDomains": [
+    {
+      "identifier": "execution-capture",
+      "label": "Execution capture",
+      "weight": 3
+    },
+    {
+      "identifier": "entity-aware-journaling",
+      "label": "Entity-aware journaling",
+      "weight": 3
+    },
+    {
+      "identifier": "notion-synchronization",
+      "label": "Notion synchronization",
+      "weight": 2
+    },
+    {
+      "identifier": "audit-pack-preparation",
+      "label": "Audit-pack preparation",
+      "weight": 2
+    }
+  ],
+  "interfaces": [
+    {
+      "with": "strategy-auditor",
+      "responsibilities": [
+        "Provide journaled positions, sleeve capacity data, and reconciliation exceptions for risk review."
+      ]
+    },
+    {
+      "with": "exit-whisper",
+      "responsibilities": [
+        "Receive realized P/L and exit context without owning the exit decision mandate."
+      ]
+    },
+    {
+      "with": "finance-broker-adapter-steward",
+      "responsibilities": [
+        "Consume fills, positions, and broker statement data through stable adapter contracts."
+      ]
+    }
+  ],
+  "contributionMix": {
+    "primary": [
+      {
+        "type": "data",
+        "weight": 3
+      },
+      {
+        "type": "automation",
+        "weight": 3
+      },
+      {
+        "type": "audit",
+        "weight": 2
+      }
+    ],
+    "secondary": [
+      {
+        "type": "doc",
+        "weight": 1
+      }
+    ]
+  },
+  "objectives": [
+    "Keep trade and position journals entity-aware, idempotent, and reconciliation-friendly.",
+    "Prepare audit packs from durable journal evidence rather than inferred plan state.",
+    "Move journal SOPs into wrkstrm-finance role space so Tau is not the owner of finance operating procedure."
+  ],
+  "responsibilities": [
+    "Capture fills and write entity-segregated Position and Strategy records.",
+    "Align Notion schema, export, and archival flows with execution ingest.",
+    "Attach preflight checks, sleeve capacity metrics, and audit snapshots to journal writes.",
+    "Reconcile journal records against broker statements and surface discrepancy workflows."
+  ],
+  "guardrails": [
+    "Planned journal work is not evidence that fills, statements, or tax packs were captured.",
+    "Never treat a Notion row as authoritative unless it links to source execution evidence or an import receipt.",
+    "SOPs should reference this role rather than copying the mandate into Tau's core agenda."
+  ],
+  "workstreamTemplateRefs": [
+    {
+      "slug": "trade-journaler-role-work"
+    }
+  ],
+  "operatingProtocolRefs": [],
+  "tags": [
+    "audit",
+    "beads-formula-ref",
+    "journal",
+    "notion",
+    "org-role",
+    "planned-work",
+    "workstream-template-ref",
+    "wrkstrm-finance"
+  ],
+  "links": [
+    {
+      "title": "Tau canonical agenda migration source",
+      "url": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json"
+    },
+    {
+      "title": "wrkstrm-finance Tau mirror migration source",
+      "url": "private/.wrkstrm/agents/tau/tau@mono.agenda.triad.json"
+    }
+  ],
+  "notes": [
+    {
+      "author": "codex",
+      "date": "2026-05-01",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "Migrated from Tau's agenda because trade journaling is a reusable wrkstrm-finance role/SOP mandate."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "slug": "mandate",
+      "title": "Mandate",
+      "kind": "bullets",
+      "items": [
+        "Own entity-aware execution capture and trade journal updates.",
+        "Keep journal writes idempotent and linked to evidence.",
+        "Prepare audit and reconciliation outputs from durable records."
+      ]
+    }
+  ],
+  "extensions": {
+    "taskPlaneRefs": {
+      "workstreamTemplateRefs": [
+        {
+          "slug": "trade-journaler-role-work",
+          "path": "private/universal/workstream-templates/trade-journaler-role-work.workstream-template.json"
+        }
+      ],
+      "beadsFormulaRefs": [
+        {
+          "formula": "trade-journaler-role-work",
+          "path": "private/.wrkstrm/beads/formulas/trade-journaler-role-work.beads-formula.json"
+        }
+      ]
+    }
+  }
+}

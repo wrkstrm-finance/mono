@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "org-role",
+  "slug": "exit-whisper",
+  "orgRoleIdentitySlug": "exit-whisper@wrkstm-finance",
+  "title": "Wrkstrm Finance Exit Whisper",
+  "status": "draft",
+  "updated": "2026-05-01T09:14:09Z",
+  "sourcePath": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json#finance-role-migration",
+  "currentSeatScope": "wrkstrm-finance-exit-guidance",
+  "purpose": "Own the reusable wrkstrm-finance mandate for exit guidance, profit capture rules, trailing stop strategies, simulations, and human-in-the-loop exit governance.",
+  "focusDomains": [
+    {
+      "identifier": "exit-guidance",
+      "label": "Exit guidance",
+      "weight": 3
+    },
+    {
+      "identifier": "profit-capture",
+      "label": "Profit capture",
+      "weight": 3
+    },
+    {
+      "identifier": "simulation-and-replay",
+      "label": "Simulation and replay",
+      "weight": 2
+    },
+    {
+      "identifier": "governance-overrides",
+      "label": "Governance overrides",
+      "weight": 2
+    }
+  ],
+  "interfaces": [
+    {
+      "with": "strategy-auditor",
+      "responsibilities": [
+        "Use strategy risk and drift signals as context for exit recommendations."
+      ]
+    },
+    {
+      "with": "trade-journaler",
+      "responsibilities": [
+        "Send realized P/L and exit context back into entity-aware journal records."
+      ]
+    },
+    {
+      "with": "finance-broker-adapter-steward",
+      "responsibilities": [
+        "Route broker hooks, orders, and overrides through approved adapter boundaries."
+      ]
+    }
+  ],
+  "contributionMix": {
+    "primary": [
+      {
+        "type": "analysis",
+        "weight": 3
+      },
+      {
+        "type": "automation",
+        "weight": 2
+      },
+      {
+        "type": "governance",
+        "weight": 2
+      }
+    ],
+    "secondary": [
+      {
+        "type": "journal",
+        "weight": 1
+      }
+    ]
+  },
+  "objectives": [
+    "Separate exit advisory logic from Tau's core agenda and from trade journal ownership.",
+    "Keep exit recommendations simulation-backed, sleeve-aware, and governed by human override rules.",
+    "Make duplicated source milestones visible while consolidating the role mandate."
+  ],
+  "responsibilities": [
+    "Define profit capture and trailing stop strategies for supported strategy types.",
+    "Maintain simulation and replay expectations for exit rules.",
+    "Record exit P/L context through the Trade Journaler role.",
+    "Keep autonomous exit machinery behind human-in-the-loop governance until explicitly approved."
+  ],
+  "guardrails": [
+    "Planned exit work is not evidence that any exit action was taken.",
+    "Exit recommendations are advisory unless a governed order, override, or broker receipt records execution.",
+    "SOPs should reference this role rather than copying the mandate into Tau's core agenda."
+  ],
+  "workstreamTemplateRefs": [
+    {
+      "slug": "exit-whisper-role-work"
+    }
+  ],
+  "operatingProtocolRefs": [],
+  "tags": [
+    "beads-formula-ref",
+    "exit-guidance",
+    "governance",
+    "org-role",
+    "planned-work",
+    "workstream-template-ref",
+    "wrkstrm-finance"
+  ],
+  "links": [
+    {
+      "title": "Tau canonical agenda migration source",
+      "url": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json"
+    },
+    {
+      "title": "wrkstrm-finance Tau mirror migration source",
+      "url": "private/.wrkstrm/agents/tau/tau@mono.agenda.triad.json"
+    }
+  ],
+  "notes": [
+    {
+      "author": "codex",
+      "date": "2026-05-01",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "Migrated from Tau's agenda because exit guidance is a wrkstrm-finance role mandate. Duplicate source milestones were consolidated into role work items where the same title appeared with and without a due date."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "slug": "mandate",
+      "title": "Mandate",
+      "kind": "bullets",
+      "items": [
+        "Own strategy-aware exit guidance and simulation-backed recommendations.",
+        "Keep broker hooks and autonomous behavior gated by explicit governance.",
+        "Return realized P/L and exit context to the journal without owning the journal role."
+      ]
+    }
+  ],
+  "extensions": {
+    "taskPlaneRefs": {
+      "workstreamTemplateRefs": [
+        {
+          "slug": "exit-whisper-role-work",
+          "path": "private/universal/workstream-templates/exit-whisper-role-work.workstream-template.json"
+        }
+      ],
+      "beadsFormulaRefs": [
+        {
+          "formula": "exit-whisper-role-work",
+          "path": "private/.wrkstrm/beads/formulas/exit-whisper-role-work.beads-formula.json"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": "0.1.0",
+  "kind": "org-role",
+  "slug": "finance-broker-adapter-steward",
+  "orgRoleIdentitySlug": "finance-broker-adapter-steward@wrkstm-finance",
+  "title": "Wrkstrm Finance Broker Adapter Steward",
+  "status": "draft",
+  "updated": "2026-05-01T09:14:09Z",
+  "sourcePath": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json#finance-role-migration",
+  "currentSeatScope": "wrkstrm-finance-broker-adapters",
+  "purpose": "Own the reusable wrkstrm-finance mandate for broker and market adapters, schema inventory, link rules, and anomaly hooks that downstream finance roles consume.",
+  "focusDomains": [
+    {
+      "identifier": "broker-adapters",
+      "label": "Broker adapters",
+      "weight": 3
+    },
+    {
+      "identifier": "market-adapters",
+      "label": "Market adapters",
+      "weight": 3
+    },
+    {
+      "identifier": "schema-inventory",
+      "label": "Schema inventory",
+      "weight": 2
+    },
+    {
+      "identifier": "anomaly-hooks",
+      "label": "Anomaly hooks",
+      "weight": 2
+    }
+  ],
+  "interfaces": [
+    {
+      "with": "market-summarizer",
+      "responsibilities": [
+        "Provide market and reference data through stable adapter outputs."
+      ]
+    },
+    {
+      "with": "trade-journaler",
+      "responsibilities": [
+        "Provide fills, positions, and statements through evidence-preserving adapter contracts."
+      ]
+    },
+    {
+      "with": "strategy-auditor",
+      "responsibilities": [
+        "Provide positions, greeks, exposures, and anomaly signals for audit calculations."
+      ]
+    },
+    {
+      "with": "exit-whisper",
+      "responsibilities": [
+        "Gate broker hooks and execution surfaces behind approved adapter behavior."
+      ]
+    }
+  ],
+  "contributionMix": {
+    "primary": [
+      {
+        "type": "code",
+        "weight": 3
+      },
+      {
+        "type": "schema",
+        "weight": 3
+      },
+      {
+        "type": "infra",
+        "weight": 2
+      }
+    ],
+    "secondary": [
+      {
+        "type": "doc",
+        "weight": 1
+      }
+    ]
+  },
+  "objectives": [
+    "Keep broker and market adapter contracts reusable across wrkstrm-finance roles.",
+    "Make schema inventory and relationship rules explicit instead of embedding them in Tau's agenda.",
+    "Expose anomaly hooks as signals without claiming downstream action has happened."
+  ],
+  "responsibilities": [
+    "Maintain broker integrations for positions and greeks.",
+    "Maintain broker and market adapter boundaries and anomaly detection hooks.",
+    "Own schema inventory and link rules for Markets, Sectors, and Positions.",
+    "Document adapter outputs so consuming roles can cite stable inputs."
+  ],
+  "guardrails": [
+    "Planned adapter work is not evidence that broker integrations are live or authenticated.",
+    "Adapter outputs should identify source, timestamp, and entity boundaries before downstream roles use them as evidence.",
+    "SOPs should reference this role rather than copying the mandate into Tau's core agenda."
+  ],
+  "workstreamTemplateRefs": [
+    {
+      "slug": "finance-broker-adapter-steward-role-work"
+    }
+  ],
+  "operatingProtocolRefs": [],
+  "tags": [
+    "adapters",
+    "beads-formula-ref",
+    "brokerage",
+    "org-role",
+    "planned-work",
+    "schema",
+    "workstream-template-ref",
+    "wrkstrm-finance"
+  ],
+  "links": [
+    {
+      "title": "Tau canonical agenda migration source",
+      "url": "private/universal/substrate/agents/tau/private/universal/identity/tau@rismay.substrate.agenda.json"
+    },
+    {
+      "title": "wrkstrm-finance Tau mirror migration source",
+      "url": "private/.wrkstrm/agents/tau/tau@mono.agenda.triad.json"
+    }
+  ],
+  "notes": [
+    {
+      "author": "codex",
+      "date": "2026-05-01",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": [
+            "Migrated from Tau's agenda because adapter and schema responsibilities are wrkstrm-finance infrastructure role work."
+          ]
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "slug": "mandate",
+      "title": "Mandate",
+      "kind": "bullets",
+      "items": [
+        "Own broker and market adapter contracts for wrkstrm-finance.",
+        "Keep schema inventory and relationship rules explicit.",
+        "Surface anomaly signals without treating them as completed downstream decisions."
+      ]
+    }
+  ],
+  "extensions": {
+    "taskPlaneRefs": {
+      "workstreamTemplateRefs": [
+        {
+          "slug": "finance-broker-adapter-steward-role-work",
+          "path": "private/universal/workstream-templates/finance-broker-adapter-steward-role-work.workstream-template.json"
+        }
+      ],
+      "beadsFormulaRefs": [
+        {
+          "formula": "finance-broker-adapter-steward-role-work",
+          "path": "private/.wrkstrm/beads/formulas/finance-broker-adapter-steward-role-work.beads-formula.json"
+        }
+      ]
+    }
+  }
+}

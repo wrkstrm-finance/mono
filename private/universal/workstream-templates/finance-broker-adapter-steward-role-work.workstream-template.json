@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "slug": "finance-broker-adapter-steward-role-work",
+  "title": "Finance Broker Adapter Steward Role Work",
+  "updated": "2026-05-01T09:20:00Z",
+  "summary": "Reusable wrkstrm-finance workstream template for broker adapters, market adapters, schema inventory, and anomaly hooks.",
+  "sourcePath": "private/universal/roles/finance-broker-adapter-steward.org-role.json",
+  "instructions": [
+    "Use this template when instantiating concrete broker-adapter stewardship work.",
+    "Keep adapter outputs source, timestamp, and entity scoped.",
+    "Do not treat this reusable template as evidence that broker connectivity is live."
+  ],
+  "outcomes": [
+    "Broker and market adapter contracts are stable for consuming finance roles.",
+    "Schema inventory and link rules are explicit and reusable."
+  ],
+  "tasks": [
+    {
+      "level": "required",
+      "text": "Broker integrations for positions/greeks."
+    },
+    {
+      "level": "required",
+      "text": "Broker/market adapters; anomaly detection hooks."
+    },
+    {
+      "level": "required",
+      "text": "Schema inventory; link rules for Markets -> Sectors -> Positions."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "0.1.0",
+  "slug": "trade-journaler-role-work",
+  "title": "Trade Journaler Role Work",
+  "updated": "2026-05-01T09:20:00Z",
+  "summary": "Reusable wrkstrm-finance workstream template for execution capture, journal sync, reconciliation, and audit-pack work.",
+  "sourcePath": "private/universal/roles/trade-journaler.org-role.json",
+  "instructions": [
+    "Use this template when instantiating concrete Trade Journaler work.",
+    "Keep journal rows linked to execution imports, broker statements, or generated receipts.",
+    "Do not treat this reusable template as evidence that journal work was completed."
+  ],
+  "outcomes": [
+    "Trade and position journals are entity-aware and idempotent.",
+    "Audit packs and reconciliation flows cite durable source evidence."
+  ],
+  "tasks": [
+    {
+      "level": "required",
+      "text": "Capture fills and write Notion Position/Strategy entries with entity segregation."
+    },
+    {
+      "level": "required",
+      "text": "Integrate sleeve capacity metrics; attach preflight checks and artifacts."
+    },
+    {
+      "level": "optional",
+      "text": "Automate IRS-ready audit packs with summaries and diffs."
+    },
+    {
+      "level": "required",
+      "text": "Notion API integration and idempotent updates."
+    },
+    {
+      "level": "optional",
+      "text": "Notion export pipeline and archival structure."
+    },
+    {
+      "level": "required",
+      "text": "Notion schema alignment; execution ingest and de-duplication."
+    },
+    {
+      "level": "required",
+      "text": "Entity-aware journal writes with audit snapshots."
+    },
+    {
+      "level": "required",
+      "text": "Reconciliation against broker statements; discrepancy workflows."
+    },
+    {
+      "level": "optional",
+      "text": "End-to-end audit packs and payroll cadence alignment."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "formula": "market-summarizer-role-work",
+  "description": "Beads formula for Market Summarizer role work.",
+  "version": 1,
+  "formulaType": "workflow",
+  "source": "private/universal/workstream-templates/market-summarizer-role-work.workstream-template.json",
+  "steps": [
+    {
+      "id": "market-summary-archive",
+      "title": "Publish daily EOD summaries and archive MD/JSON outputs.",
+      "stepType": "task"
+    },
+    {
+      "id": "market-summary-analytics",
+      "title": "Integrate unusual flow, IV shift analytics, and sector heatmap.",
+      "stepType": "task",
+      "needs": [
+        "market-summary-archive"
+      ]
+    },
+    {
+      "id": "market-summary-governance",
+      "title": "Produce governance trends, entity roll-ups, DocC exports, and failure notifications.",
+      "stepType": "task",
+      "needs": [
+        "market-summary-analytics"
+      ]
+    }
+  ]
+}

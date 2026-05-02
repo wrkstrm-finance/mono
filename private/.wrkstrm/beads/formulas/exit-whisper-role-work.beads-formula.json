@@ -1,0 +1,30 @@
+{
+  "formula": "exit-whisper-role-work",
+  "description": "Beads formula for Exit Whisper role work.",
+  "version": 1,
+  "formulaType": "workflow",
+  "source": "private/universal/workstream-templates/exit-whisper-role-work.workstream-template.json",
+  "steps": [
+    {
+      "id": "exit-whisper-policy",
+      "title": "Define profit capture, trailing stop, and strategy-aware exit policy.",
+      "stepType": "task"
+    },
+    {
+      "id": "exit-whisper-simulate",
+      "title": "Run simulation/replay against sleeve guardrails and strategy context.",
+      "stepType": "task",
+      "needs": [
+        "exit-whisper-policy"
+      ]
+    },
+    {
+      "id": "exit-whisper-govern",
+      "title": "Gate broker hooks, P/L journal writes, and autonomous behavior through human-in-the-loop governance.",
+      "stepType": "task",
+      "needs": [
+        "exit-whisper-simulate"
+      ]
+    }
+  ]
+}

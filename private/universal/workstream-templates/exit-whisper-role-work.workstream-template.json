@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "slug": "exit-whisper-role-work",
+  "title": "Exit Whisper Role Work",
+  "updated": "2026-05-01T09:20:00Z",
+  "summary": "Reusable wrkstrm-finance workstream template for exit guidance, simulation, and governed execution hooks.",
+  "sourcePath": "private/universal/roles/exit-whisper.org-role.json",
+  "instructions": [
+    "Use this template when instantiating concrete Exit Whisper work.",
+    "Keep exit recommendations advisory unless broker receipts or governance overrides prove execution.",
+    "Do not treat this reusable template as evidence that an exit action happened."
+  ],
+  "outcomes": [
+    "Exit guidance is strategy-aware, simulation-backed, and governance-gated.",
+    "Realized P/L context is returned to the trade journal when execution is proved."
+  ],
+  "tasks": [
+    {
+      "level": "required",
+      "text": "P/L journal writes with entity segregation."
+    },
+    {
+      "level": "required",
+      "text": "Profit capture and trailing stop strategies; broker hooks."
+    },
+    {
+      "level": "optional",
+      "text": "Simulation/replay tooling."
+    },
+    {
+      "level": "required",
+      "text": "Strategy-aware exits (calendars/diagonals/verticals) with sleeve guardrails."
+    },
+    {
+      "level": "optional",
+      "text": "Autonomous exit engine with human-in-the-loop overrides and governance logs."
+    }
+  ]
+}

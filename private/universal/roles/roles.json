@@ -1,0 +1,62 @@
+{
+  "schemaVersion": "0.3.0",
+  "catalogType": "org-roles",
+  "semantics": {
+    "paperclipAgentMeaning": "org-role",
+    "workingRule": "Roles define reusable mandates; agents, runtimes, or operators fill positions that instantiate those roles.",
+    "linkingRule": "Link wrkstrm-finance positions and assignments to role definitions rather than copying role mandates into agents.",
+    "storageRule": "Role definitions live under private/universal/roles/*.org-role.json."
+  },
+  "orgs": {
+    "wrkstrm-finance": {
+      "title": "wrkstrm-finance",
+      "definitionRoot": "private/universal/roles",
+      "notePath": "private/universal/roles/.docc/index.md",
+      "roleIdentityNamespace": "wrkstm-finance",
+      "roles": {
+        "finance-broker-adapter-steward": {
+          "orgRoleIdentitySlug": "finance-broker-adapter-steward@wrkstm-finance",
+          "title": "Wrkstrm Finance Broker Adapter Steward",
+          "status": "draft",
+          "summary": "Stewardship seat for wrkstrm-finance broker and market adapters, schema inventory, link rules, and anomaly hooks.",
+          "definitionPath": "private/universal/roles/finance-broker-adapter-steward.org-role.json"
+        },
+        "exit-whisper": {
+          "orgRoleIdentitySlug": "exit-whisper@wrkstm-finance",
+          "title": "Wrkstrm Finance Exit Whisper",
+          "status": "draft",
+          "summary": "Role mandate for wrkstrm-finance exit guidance, profit capture rules, trailing stops, simulation, and governed broker hooks.",
+          "definitionPath": "private/universal/roles/exit-whisper.org-role.json"
+        },
+        "market-summarizer": {
+          "orgRoleIdentitySlug": "market-summarizer@wrkstm-finance",
+          "title": "Wrkstrm Finance Market Summarizer",
+          "status": "draft",
+          "summary": "Role mandate for wrkstrm-finance daily market summaries, sector and IV analytics, governance exports, and summary delivery operations.",
+          "definitionPath": "private/universal/roles/market-summarizer.org-role.json"
+        },
+        "strategy-auditor": {
+          "orgRoleIdentitySlug": "strategy-auditor@wrkstm-finance",
+          "title": "Wrkstrm Finance Strategy Auditor",
+          "status": "draft",
+          "summary": "Role mandate for wrkstrm-finance risk audits, exposure dashboards, drift detection, and governance exception feeds.",
+          "definitionPath": "private/universal/roles/strategy-auditor.org-role.json"
+        },
+        "swift-public-libraries-steward": {
+          "orgRoleIdentitySlug": "swift-public-libraries-steward@wrkstm-finance",
+          "title": "Wrkstrm Finance Public Library Steward",
+          "status": "draft",
+          "summary": "Stewardship seat for wrkstrm-finance public Swift libraries, broker service boundaries, DocC, tests, and source compatibility.",
+          "definitionPath": "private/universal/roles/swift-public-libraries-steward.org-role.json"
+        },
+        "trade-journaler": {
+          "orgRoleIdentitySlug": "trade-journaler@wrkstm-finance",
+          "title": "Wrkstrm Finance Trade Journaler",
+          "status": "draft",
+          "summary": "Role mandate for wrkstrm-finance execution capture, entity-aware journaling, Notion synchronization, reconciliation, and audit packs.",
+          "definitionPath": "private/universal/roles/trade-journaler.org-role.json"
+        }
+      }
+    }
+  }
+}
