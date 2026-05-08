@@ -21,12 +21,11 @@ For commissioned triads and related identity artifacts, inspect:
 
 ## Local Metadata Sources
 
-- `wrkstrm-finance.json`
+- `private/universal/identity/wrkstrm-finance.collective.json`
 - `wrkstrm-finance.reminder.json`
 
 ## Other Repo Notes
 
-- Legacy profile archive: `private/universal/archive/legacy-profiles/`
 - `README.md`
 
 ## Operational Notes

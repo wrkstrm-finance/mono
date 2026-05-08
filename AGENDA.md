@@ -21,8 +21,7 @@ It is not a detached wishlist.
 
 ## Local metadata sources
 
-- Legacy profile archive: `private/universal/archive/legacy-profiles/`
-- `wrkstrm-finance.json`
+- `private/universal/identity/wrkstrm-finance.collective.json`
 - `wrkstrm-finance.reminder.json`
 
 ## Maintenance rule

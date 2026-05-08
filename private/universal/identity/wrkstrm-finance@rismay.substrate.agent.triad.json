@@ -76,7 +76,7 @@
         {
           "kind" : "paragraph",
           "text" : [
-            "Local metadata sources: wrkstrm-finance.json, wrkstrm-finance.reminder.json"
+            "Canonical collective packet: private/universal/identity/wrkstrm-finance.collective.json; companion reminder: wrkstrm-finance.reminder.json"
           ]
         }
       ]
